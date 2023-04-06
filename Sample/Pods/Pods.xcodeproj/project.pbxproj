@@ -1,0 +1,2092 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016F597FB2705BFC3850F78CC0A0EF85 /* DarkStatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281785EADE549B9E97C6E487B5A09991 /* DarkStatusBarStyle.swift */; };
+		0172206B67F4246E5DE75A343A0E2B0F /* DefaultShady.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFE1D1799364347F552CE463C2DF10 /* DefaultShady.swift */; };
+		08BD82B5D21491A18D7464CCE28C986F /* SoramitsuScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A9F17D65B43343E749DF864FE0897 /* SoramitsuScrollView.swift */; };
+		0DFB437D167DA49F494CB7AE38689B72 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7BE951BB45BF31D68BE081DD97B24E /* Helpers.swift */; };
+		0E58A15AFA9C5AA94FD130353E3EA64A /* SoramitsuScrollViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4938609B07C47DE9A801D8833DF6973 /* SoramitsuScrollViewConfiguration.swift */; };
+		0F88C0F5290168CEACF4F7B6EA046E58 /* SoramitsuSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C9710232F4376C401BE816F1C6603E /* SoramitsuSize.swift */; };
+		11044929B2CB15E4F7E8019B4159E6E1 /* SoramitsuTableViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB95B1BFAE83E711BC18C9D8AFFDD5 /* SoramitsuTableViewConfiguration.swift */; };
+		1920A5F84656DA8E86DA64DF77D6DB52 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0EFE233CC3A4AD96FA63702FAC1405 /* Fonts.swift */; };
+		1A2F860989BE5D4E99640C34160D6404 /* SoramitsuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95D8F4DFC45355709A3690DF596E0D /* SoramitsuLayout.swift */; };
+		1A6C51337B277AE55DF187D7DCAC05C2 /* InputFieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A65994C147D31406EBD66B16ECE5B8 /* InputFieldConfiguration.swift */; };
+		1C683F429778243DDE5B09236847FD6C /* LightPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EA70B08B4ACD41EDE39BC7945D57C /* LightPalette.swift */; };
+		1C85A475C356B3AE9C631C88DA9339E6 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DA94922B6F2FA759759DA2271E3CFC /* TabBar.swift */; };
+		1ED82E743D4BCD98AB2DD3D5E2717768 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6750AD7DAA0B72B05526B0A6F42C6764 /* Shadow.swift */; };
+		1F5C3FB00DE0EA8E17247E1B10777037 /* SoraUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74575630DD2E4B59092F1006154B05D9 /* SoraUIKit-dummy.m */; };
+		211138BD65065D62B9AE0F8868A679D3 /* DispatchQueue+Gecko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF37FFACE0E392F0FF229DA9E35B344 /* DispatchQueue+Gecko.swift */; };
+		26B7ED61EED393F4799484339406EBC9 /* HistoryTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B58F66048B729BF9130EFDC95E5519 /* HistoryTransactionView.swift */; };
+		28F17C75EB3A61201BF70D968335C98E /* SoramitsuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A84D424950EA9E6078A3C3E38325F /* SoramitsuButton.swift */; };
+		292D5A99C58CBF62A17D46F494226666 /* NSObject+SoramitsuColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE1219A2FB9ED599AC95B118F4F51E2 /* NSObject+SoramitsuColorable.swift */; };
+		2A5783E4E90CEA59669C720D35357D8A /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555825EE3C5F46523640299827061B0 /* AssetView.swift */; };
+		2AF3A8B018F8CB6D89837702D33E122D /* SoramitsuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A678E0569C5B1C17BEEEC4C47EE8BEDB /* SoramitsuCell.swift */; };
+		2B144B2827F1361640E3FBEDAE17CE68 /* SoramitsuTableViewTopPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0094C9E72216C8883B2E75D3033676 /* SoramitsuTableViewTopPagination.swift */; };
+		2CB876E59A33AA67CF4BC2423E872C59 /* SoramitsuLabelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF5637D2B0B1B20E0EAEF6F58DA1600 /* SoramitsuLabelConfiguration.swift */; };
+		315E551FBDFC5C253F324BC6253259B4 /* ScreenSizeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4930EFA3245E4A41124EC29F7E94F /* ScreenSizeMapper.swift */; };
+		363CE7171F67602990035A890CAA676A /* SoramitsuViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650F325E6900E88CC4DF2FC9DB601687 /* SoramitsuViewConfiguration.swift */; };
+		3675ECCB5B54DCE52A0D990D1E5C6BBA /* SoramitsuLoadingTableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAEE3C676502158D10A82C44C820345 /* SoramitsuLoadingTableViewItem.swift */; };
+		3751021697E561CFBC152F4A6CF5E1C4 /* InputAssetField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF27AA0F73588BB1C086149E5E639B8 /* InputAssetField.swift */; };
+		39B517B19962EEEA2A61C668661876BF /* SoramitsuLoadingTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C653FE5CCA10957CB1591AB8598F7D1 /* SoramitsuLoadingTableViewSection.swift */; };
+		3BD6D8FD22BFC420759E73C693B0C4E4 /* SoramitsuShimmerViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D4F9DEFF2A8DB05EC8F6E0EBFD958 /* SoramitsuShimmerViewConfiguration.swift */; };
+		3CB97AF6B339C8311217E3534BFB7F57 /* SoramitsuTableViewCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9DF9762C170B91C22F8508925ABAA8 /* SoramitsuTableViewCellConfiguration.swift */; };
+		3ED19174C15880237DD54A7307C3B39F /* BlurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE8D843BD9E2EFF339121DF274B7925 /* BlurViewController.swift */; };
+		3F51358E306A938847FE92970C550E2B /* SoramitsuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D61793220802192BDCEE8ADC7286F63 /* SoramitsuViewController.swift */; };
+		401F660C1395D9FCEC44CF7566A6450F /* SoramitsuTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E13BDF21387E6C6776EDB1BA661F77 /* SoramitsuTableViewSection.swift */; };
+		411DCDC55B923BE1F2B05DD89F7DC95D /* Array+SoramitsuUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112718BF5FFC6858D03A5CE4322987D /* Array+SoramitsuUI.swift */; };
+		43DFC4BC21C458A6B319E4D13727753F /* SoramitsuStatusBarManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DD22C0E5915D4747819E0C2254071 /* SoramitsuStatusBarManaging.swift */; };
+		43F4A5AFA3A984934E4FEDB255EEAA34 /* SoramitsuTableViewPaginationHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC7C1D36394E8F1DA543A7C08C52011 /* SoramitsuTableViewPaginationHandlerProtocol.swift */; };
+		449A0B57F036A60B179E59C1A5DB6A29 /* GElementDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08D1F2770ACD1FA7C276F54311526A6 /* GElementDescriptor.swift */; };
+		459A1E1F9233DC0AA55880365C7D7F28 /* SoramitsuBaseButtonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564C50E3C88C22F6E4674060775AB07E /* SoramitsuBaseButtonConfiguration.swift */; };
+		469A84C8C327FAE5DC88547B6BFCAD2E /* Gap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74A222C56B30EA3BE35DBEC3217C60 /* Gap.swift */; };
+		4765F35A003CE452411D612ADF4B27C8 /* SoramitsuLoadingPlaceholderDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719DA6E7758135A640DA1F81FF574DA8 /* SoramitsuLoadingPlaceholderDecorator.swift */; };
+		48A43F24EF39AE8EC5F4D989A7282CC2 /* MainThreadChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7710BD21DBC3B3E342726DC5BA63919 /* MainThreadChecker.swift */; };
+		493A41AF78ED84A0D7F3161ED9E38192 /* Pods-Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B431CA7E1B6CB0971A1735908DF1CFA /* Pods-Sample-dummy.m */; };
+		4A689714F3303F53AABA1E601D52371F /* CABasicAnimation+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBD8D7DC7A13310179F68467CA40EC /* CABasicAnimation+Convenience.swift */; };
+		4BA780F57D1766A4688301BE9B1273BE /* SoramitsuTableViewItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AFD0CED10E1E2B34B27A5BFE96F55E /* SoramitsuTableViewItemProtocol.swift */; };
+		4BDB2A5BD4D2DCEE54DD551257D9359F /* SoramitsuTableViewObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243E37FD61358AC73A3608AE5E26722D /* SoramitsuTableViewObserver.swift */; };
+		4C001AA721FDF70CC4D98A1677A28C19 /* SoramitsuTextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040EAB602D33CF5D85640CF638975C3 /* SoramitsuTextAttributes.swift */; };
+		4F6FB86885E7260BA5D4232BE93465F8 /* SoramitsuPlainTableViewDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D636432066AB7C8702C6792FE8E253 /* SoramitsuPlainTableViewDescriptor.swift */; };
+		4F9EA6250A8B654C78DBE4FB03EB76B7 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F783B8F7941C565F3DD3712FA00F9 /* Math.swift */; };
+		50CB697449D5359158398DC4C6039D84 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652F1C524BF34E7C3493FD5650546AF2 /* Padding.swift */; };
+		5330E5569DA95E888DE48870AE1602D8 /* Pods-Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0379D5EA71FB62DA1165A75656B059F /* Pods-Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53B0025C017DEA3F1A4F301E5AA816F3 /* KeyboardEventsListnerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1759E5A5C5BB6483C9902BC3A48308 /* KeyboardEventsListnerHelper.swift */; };
+		5438DD0AF825FB48B88F7D242D12CD13 /* SoramitsuAttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800F6B2B102AA5AF86D15A18DAA85E9 /* SoramitsuAttributedText.swift */; };
+		5714B06F815689E2017809761D0D5496 /* SoramitsuViewControllerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E92CA2A7EF8DEBA13ED0C04410255 /* SoramitsuViewControllerConfiguration.swift */; };
+		584A577FBA24FEACDEFD2B81E06E85EB /* SoramitsuBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48395F5ECB56A78DEE154287F3C420A /* SoramitsuBaseViewController.swift */; };
+		58A662C958439322A1F44FED046A046C /* Molecule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF40CE0D1BB356686842018794298A /* Molecule.swift */; };
+		591DE602806C715BDDC5ED3EF85EE7DA /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620947EDE1F7DE6202F4D51B9CE3ED87 /* States.swift */; };
+		5B88E273E2ABA67BB18CA64404DC7F47 /* SoramitsuStackViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A7DC12D74D2F6F322396A991A3FBA /* SoramitsuStackViewConfiguration.swift */; };
+		60666AB71D2CEEE440C0E19987CF4643 /* DarkPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FC4C1D00ADAB5CA88517D74AD11436 /* DarkPalette.swift */; };
+		60E1111CF686F88133D319450C70653F /* SoramitsuTableViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD0F367395F98B04CAEE21D342CEB0 /* SoramitsuTableViewType.swift */; };
+		6228A1FE6638BFEC790EB5CF2C0B9A92 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29710A403C813680328C7FC77AADA1 /* InputField.swift */; };
+		6382F34CF16AAD0B22C3E2A04A1C1FB7 /* Pods-Sample-SampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1835E183452E53869C68AF36E189FE27 /* Pods-Sample-SampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66D4244D8FB58CC4FE0C4C7452F9B1A9 /* SoramitsuStateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7D593AA8B792B84448503FD01340E /* SoramitsuStateDecorator.swift */; };
+		688C20D8943EA29A031EB287E320E96D /* ImageButtonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B42A32568CF2F67B9C1C46A02E4DEB /* ImageButtonConfiguration.swift */; };
+		6961FDB80B1CED7B29D66D6BC4BE7F97 /* SoramitsuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DA6CE1A87FF1B9A8EB6D32C60434BA /* SoramitsuLabel.swift */; };
+		6BC7A88AB501A326EDB65AE7D54BBCA0 /* SoramitsuButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B06CA6AF7ABECDA083B5F2AB9576B /* SoramitsuButtonType.swift */; };
+		706B486B0AEBD86DD422B1D4495207BF /* SoramitsuScrollViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01AD2E9C432C049D8FA10F5BAF65B8F /* SoramitsuScrollViewContext.swift */; };
+		71E99E59DC786825F809651AB5A37E8E /* SoramitsuHapticType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355AB1AE94F5337D21B4E7340C248518 /* SoramitsuHapticType.swift */; };
+		72DAC69DD7A024067D5F539035140DCF /* SoramitsuHapticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC5490E884D6AA024C247BB25FD703 /* SoramitsuHapticable.swift */; };
+		749CE23C961F226395BFF83E528C9DF5 /* Pods-SampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB86FC9B732E93E6E2470F1E6AA8934B /* Pods-SampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75CCF4EE9B4EC0991C72BBE8A3D03830 /* SoramitsuLoadingIndicatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B5B54FC6CF099E53AB44022869AFF /* SoramitsuLoadingIndicatable.swift */; };
+		761DFE41EBDC8EBABE5676542BD50467 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABD93548E7B81D3651D2160B4825982 /* CornerRadius.swift */; };
+		78E446AF985E7DDE0DCDDE29C6995D9B /* SoramitsuStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3DF071DE92D32BDE18B132EA22D080 /* SoramitsuStyle.swift */; };
+		79AEE4BB67D8DE7A9EFA0DFD45D2875C /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CDDC2E5C27FCA2AD345F9F251D8AE0 /* Palette.swift */; };
+		7C123A57DA8B0BE0789DB28C39E33056 /* SoramitsuShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD84BC86CB5F88012DD35021809B98 /* SoramitsuShimmerView.swift */; };
+		7C67520ABC4D593B1C6A29C467994387 /* SoramitsuActivityIndicatorViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB80B9B754E1102F6992BAA81C25F2F /* SoramitsuActivityIndicatorViewConfiguration.swift */; };
+		7F4A4F5D269DD2DB8E7851A599F601AD /* ThemeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9CF16D96D9AF5260FDE8434FAA7E2 /* ThemeStorage.swift */; };
+		81AB6AF893BC161B2C4F86501989434F /* Array+SoramitsuTableViewSectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F97DDB7D1153E129157F2BED8306C /* Array+SoramitsuTableViewSectionProtocol.swift */; };
+		81CCE9DA6522688DA85B60178DD9BA7F /* ObservationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA8493D8B12DE8A9A8CE9B9BE15B7E /* ObservationProtocols.swift */; };
+		83BED0A4A356926C5AC90FF9DCE8BEDB /* SoramitsuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDFE2D690C49F8DCF9215BB69D59669 /* SoramitsuButtonStyle.swift */; };
+		8511E1B03DF239F8AD7D8CBE8948CA63 /* Pods-Sample-SampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 160988A2F5A0E0E4ADD71F58D8A3277A /* Pods-Sample-SampleUITests-dummy.m */; };
+		868A05E8E6CB89946D526F2D8B99CE9E /* SoramitsuImageViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E5364AE25FC05E33EB369E54A2715 /* SoramitsuImageViewConfiguration.swift */; };
+		87839122CB32F8667492217433369F2E /* SoramitsuColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAC15EE333C98674106AF9EF1C17882 /* SoramitsuColor.swift */; };
+		87D4B5D57932788FBA3A19B9E7985955 /* ViewObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F027F97F12AECD4CD7A3327E6E897A4E /* ViewObserver.swift */; };
+		87D943A005885001D99B48566863B7CE /* LightStatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCD0E34069D2DB5F905F5B8138E6711 /* LightStatusBarStyle.swift */; };
+		88B3113C0DB165BA4489E2CC38B462AF /* SoramitsuImageViewImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F840C15A380CEE795002A249D4851F02 /* SoramitsuImageViewImageView.swift */; };
+		89C12015B924A53ED334E4CBD76400C0 /* FontData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0634DB864636B1354D9EFE4DCDC7CCD9 /* FontData.swift */; };
+		8AB56B2347FA4628D8356BF5CF731D85 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7E4F743F23562BC4FBF462FB280FD /* ThemeManager.swift */; };
+		8BCD4F0D286556647D19E8057FD06596 /* SoramitsuTableViewPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD517AB03AEF7B3C0FECA3A73E4489 /* SoramitsuTableViewPaginator.swift */; };
+		8C375DB0EF29C331D380880DA9C193EF /* SoramitsuControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC2BFE8B7E6EA477D9CC2E5FFE47204 /* SoramitsuControl.swift */; };
+		8DC217C3D31D3580DD09FEDD22A3244E /* WalletViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB2FB18E9E9D123A4FD07782514024 /* WalletViewMode.swift */; };
+		9096C38D6CDEDE27126818E2A912EF83 /* SoramitsuHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78174EFE7F28635471ECBCC67A0D1ACC /* SoramitsuHaptic.swift */; };
+		9098B4932E2C30D45176695DC87585FD /* PoolViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3569F31310E66897C16998A9906498 /* PoolViewConfiguration.swift */; };
+		90F73D5F844202FBE6E9B104620BC251 /* InputAssetFieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B373F0B3C63B6BF493E1A8895A9604 /* InputAssetFieldConfiguration.swift */; };
+		91ED828B656FF684285175907BB83713 /* SoramitsuMenuItemAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F189C1F7DB67F8FEC9A9C38E55B5 /* SoramitsuMenuItemAction.swift */; };
+		95F40D4DA881AD7FB693E7B8AF86C3EF /* HistoryTransactionViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2FFE30F8B523D6E68F03ABCBCA475A /* HistoryTransactionViewConfiguration.swift */; };
+		96173DE960FE7CB37A85BBB043198FA2 /* DefaultRadii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC5CB795C6A9D1B54DF38ED72DB762 /* DefaultRadii.swift */; };
+		96335388CE8F8128CD2A7ECCE815CFC2 /* SoramitsuThemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA36D65E543BD9888C5CA3C4E654A86 /* SoramitsuThemeType.swift */; };
+		965262A8345E0B579141F07BF3D1847B /* SoramitsuLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8308EE043FC9FDB5B861F039D259432C /* SoramitsuLoadingTableViewCell.swift */; };
+		97CFDBC0B0B13B60469EB4B47F68A02F /* UpdateOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EA988ACDD6F7FE9400B05276685A39 /* UpdateOptions.swift */; };
+		98B87F14083289A8B639D877E0B3DAB7 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85593DA9E28FED70D7746F8140A5047D /* ImageButton.swift */; };
+		9A92A49962B132AEA1C2238F89D135E2 /* SoramitsuTableViewBasicPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD39DCF2AD373CA00F5CD94274D624F /* SoramitsuTableViewBasicPagination.swift */; };
+		9BFF2D5EE3DC6BD6E6AB2624F123DEAA /* InputTextViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EE9788A4707B752432C830B63BF669 /* InputTextViewConfiguration.swift */; };
+		9CF1D6A6C118F3550639D0BCD4CD05B4 /* ScrollViewContentInsetsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575CBEDC3EC89FA6A8D148F62F63F0F2 /* ScrollViewContentInsetsHelper.swift */; };
+		9E7A9EBCC802A598D5677A92365A61DD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF00117174EE7CB6AB70F599778B6EF /* main.swift */; };
+		A38A8FD988316EBEBEB8EBAEAC44A24A /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ECE8F177F74C823BC121F92B8CB9F0 /* ObservableViewController.swift */; };
+		A3BC3CE0E5FB9C8394E29DD351F35CF5 /* SoramitsuTableViewSectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA009F047622FAD5C481A425A6F56107 /* SoramitsuTableViewSectionProtocol.swift */; };
+		A4E3D471CAA98C4A7EAE306A96ACF81E /* Organism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CE5E88EF1053743CC05F6A25B14810 /* Organism.swift */; };
+		A50D4336439F85F79FD417940924F531 /* SoramitsuTableViewSpacerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C4CB495AE6322336EE3C0B4D13AA2 /* SoramitsuTableViewSpacerItem.swift */; };
+		A6959E26032C2C96735B88816BA12D99 /* SoramitsuOverlayDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779B49AEB01CF1CEAC0A371B5F5C053 /* SoramitsuOverlayDecorator.swift */; };
+		A756889DE2C2B78CED6B1C02D540B2E7 /* SoramitsuControlConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96D20893A5AF98665968C7A55D0DB0 /* SoramitsuControlConfiguration.swift */; };
+		AC333A66A2723EB4E12B32FDBA25795B /* SoramitsuTextFieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F230FDE1CD3A1D077948C5177BEA86A /* SoramitsuTextFieldConfiguration.swift */; };
+		AF3AC5E34C3E2F56B9EE4BED3130004F /* SoramitsuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D0E0DCDED84DAF6288D7668F426E31 /* SoramitsuView.swift */; };
+		AFE4A8D8E508DC764C862B4775D258AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B48647B58A8E6D9FFC0BAE60C56B0500 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E1A292E392293847502D2DF6988FC /* Picture.swift */; };
+		B66EAE97768CC79A64686F4500109B52 /* Radii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F7775BF25027E30A767CD3E16C0C7 /* Radii.swift */; };
+		B72ED78FBF2BBC46FB44177A4E713794 /* SoramitsuPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD596A6B33414CCD225719D1DD57E42A /* SoramitsuPosition.swift */; };
+		B871EA00D0410DB02A1F2AC30B47E52D /* SoraUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 713ECBBA38C3B1DD602EC6952F449666 /* SoraUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B888E8207646BB955DE2FE1FFCF0529A /* SoramitsuActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433D44DE0295902D00C9210D9D303DBF /* SoramitsuActivityIndicatorView.swift */; };
+		B91865042A1864F8C91F1380B34013E0 /* SoramitsuBlurDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E68C1BCDEE99682C63D5B0D98A029EF /* SoramitsuBlurDecorator.swift */; };
+		BC723F52D2B93F7C578F85D29EFAE797 /* SoramitsuTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3621E2864ABAAD1BCC1C932C27D047B /* SoramitsuTextField.swift */; };
+		BE9A042B7F7FF0265EEA015F9324285A /* SoramitsuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4405334ADEE8B8C226009CB357016D /* SoramitsuTableView.swift */; };
+		C1279A7A56F9CF501F6591624F612545 /* PoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3567DE6447757400A48C9CCAE33A75C /* PoolView.swift */; };
+		C15F4114D3C702290579905CAD1EF3F2 /* SoramitsuTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF44039899CE32DDB2E8943D52C0063 /* SoramitsuTapGestureRecognizer.swift */; };
+		C3D3D18B4CB8D588F007813B0A156385 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001D44CE4456449E55B564194B5D2B1 /* Utils.swift */; };
+		CB3EA83023A9ADAF868D3C8A7F17103D /* DefaultLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DBC9B70961197FEE5150072188A401 /* DefaultLayout.swift */; };
+		CF5DBE018C05BAD53C209BEBDB541B0B /* SoramitsuTextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC8A1ADFD00DC9FEE1C3A07B99F0D7 /* SoramitsuTextItem.swift */; };
+		D2E2F8B192789804D1395135FF469FF0 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636FF0014A51F97691DBF8B9C4D542DF /* InputTextView.swift */; };
+		D4BD64BCB18CCD2CFFFBCA2F1A43C7B9 /* SoraUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C25154C298729A2529207A165DCD85 /* SoraUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5085A70A7FD8A1E80C7FFAF2064CABD /* StatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FADBE32411A53F41B92108868C5032 /* StatusBarStyle.swift */; };
+		D943B993F2E4AC5172A5C20D399862D8 /* Pods-SampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAF266D6F1E455E71BFDF2DDDA0454B /* Pods-SampleTests-dummy.m */; };
+		DB113F46D6583FB858014CAFA295DCD0 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821606AC0188E3EDE6CDF816B234106F /* Element.swift */; };
+		DD8EA6BDC94D996B3BB39CB2FD8B09E6 /* SoramitsuTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3A06804F243FBADC12661D5C612D6 /* SoramitsuTableViewCellProtocol.swift */; };
+		DE17B926BA2B713BA2B440F588D388B5 /* SoramitsuUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6579F77191C0860655A6098C51119B2 /* SoramitsuUI.swift */; };
+		DED4E42DEBA0AE705406AD67C637D38F /* SoramitsuInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13F7EA9CBB4C8F6EFAFC0FA795C29E /* SoramitsuInsets.swift */; };
+		DF947DC08D5210114924775121333271 /* SoramitsuTableViewFoldableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978BD33E844C7A2D6A07F9AA48755E3 /* SoramitsuTableViewFoldableSection.swift */; };
+		E00F11AE760DF695036845F17B349160 /* SoramitsuTableViewSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2443AD5989A5B084BC6D65BA2AC2F82 /* SoramitsuTableViewSpaceView.swift */; };
+		E0498C2DD6ADBCB94A380041FD860C84 /* SoramitsuGroupedTableViewDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A42B52DAD106A85961D72F3DAF6AB /* SoramitsuGroupedTableViewDescriptor.swift */; };
+		E325F30F7E7097BB26BBA8A3E5A27805 /* SoramitsuPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3362EFE72E5B0A93555096568785B6E /* SoramitsuPanGestureRecognizer.swift */; };
+		E40424D9414E85DCABADB002AF273223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E5CC3CCFDA60E41A5B3C272ADB0D11E1 /* SoramitsuTableViewTitledHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D15AF37BC6B5FE52F58F15F2D0D83 /* SoramitsuTableViewTitledHeaderCell.swift */; };
+		E67296A5326ACECF97969A1D8C0BD56E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E71466BB2113CB3D7C9856A264E714C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E837324FCC0E8D7287F6913F6C5F6B1A /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC05F32D50D025ED89AA11A21E6BE7E6 /* Corner.swift */; };
+		E84EBCA52D0B042489E439ADF9E11168 /* SoramitsuStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD14FFD1B10B1834BB0C064CFB619D4 /* SoramitsuStackView.swift */; };
+		EB3E551BA511F65677FCF48D043B46AB /* ShadowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9B191289F766BC4C1CE7EB164AE89 /* ShadowData.swift */; };
+		ECDE4D4D97AB6971DC7485DB377D7434 /* ViewControllerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B2496FB6B7AD119CD2559960223B5 /* ViewControllerObserver.swift */; };
+		ED8BBE996A9059E3C9BEE1BBA582A690 /* SoramitsuTextViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D50398051696E64564022AF67A04F6 /* SoramitsuTextViewConfiguration.swift */; };
+		EDC21CADDFAC1607E66E889F5D1B7FFC /* AssetViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8305D0E3AC482BE8BCFB41CDBD271 /* AssetViewConfiguration.swift */; };
+		EF5843119317D8B3B39A3BA750E36867 /* SoramitsuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E90B40AF8C40C357657728720B497E /* SoramitsuConfiguration.swift */; };
+		F0CCEB80C8A6D7E4D9CECE9E5011C640 /* Shady.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C179FD8F72E59CE37E334464D4CBE5B /* Shady.swift */; };
+		F1FF50FD0FFD8815EDB4779A34288D38 /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED3D1CDB5A6EAED2D43810AF3600CC6 /* Atom.swift */; };
+		F29B33268D3F97EB76F62EFA5E81783C /* SoramitsuTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E77843CCEBB0E9D3B189688C77D684 /* SoramitsuTextView.swift */; };
+		F2A62A923F5946D8A1505CE369F24EE0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F6AA993C6B17AA500F605B51630E5C /* Colors.swift */; };
+		F48887A1CE87FCD41C014360F808CB62 /* CustomVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE32F5DF7803FF94EB8707DEF58E8D /* CustomVisualEffectView.swift */; };
+		F570A150C20186727F54B123533F639D /* SoramitsuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD7153F2EEDEB3B30AEC1D427D6F26 /* SoramitsuTableViewCell.swift */; };
+		F5AF90649690B25E87CE854E7C652B60 /* SoramitsuTableViewTitledHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56CECB1C12ADFE3DEE51DF16A9EC6C0 /* SoramitsuTableViewTitledHeader.swift */; };
+		F684D3E64273470AD0C7ECF1BB45E3BB /* SoramitsuButtonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDBFBE9F97FCA272A3C1FDABFE188D /* SoramitsuButtonConfiguration.swift */; };
+		FA711E163799FACD8970D6C92C2C91F7 /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED050637BF8D915FB0A1BAADADB65CC /* Margin.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CC66098762BFFAEC76B2670BB15E07E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB4960A825A3934251CB2C86190A2B52;
+			remoteInfo = SoraUIKit;
+		};
+		6FAB956F5BD5D473E1D10E4719F71ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D56F5BE8DAFC40C8A6EB6135F33F23F;
+			remoteInfo = "Pods-Sample";
+		};
+		7630F9692690A51A469E735A22920BD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB4960A825A3934251CB2C86190A2B52;
+			remoteInfo = SoraUIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034D1BBE8ED28C4427B2838B9F4A83F1 /* Pods-Sample-SampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-SampleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0634DB864636B1354D9EFE4DCDC7CCD9 /* FontData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontData.swift; sourceTree = "<group>"; };
+		06DBC9B70961197FEE5150072188A401 /* DefaultLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultLayout.swift; sourceTree = "<group>"; };
+		08B09C8F59E47A8465864914CE75C2D3 /* Pods-SampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SampleTests-Info.plist"; sourceTree = "<group>"; };
+		0B9EFB96F8FC819B8BCD85E5487C121D /* Pods-Sample-SampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample-SampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0CF27AA0F73588BB1C086149E5E639B8 /* InputAssetField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InputAssetField.swift; sourceTree = "<group>"; };
+		0E0B9464CBE009C1C4E75676D6C90F95 /* SoraUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SoraUIKit.release.xcconfig; sourceTree = "<group>"; };
+		11B8305D0E3AC482BE8BCFB41CDBD271 /* AssetViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetViewConfiguration.swift; sourceTree = "<group>"; };
+		15D636432066AB7C8702C6792FE8E253 /* SoramitsuPlainTableViewDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuPlainTableViewDescriptor.swift; sourceTree = "<group>"; };
+		160988A2F5A0E0E4ADD71F58D8A3277A /* Pods-Sample-SampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample-SampleUITests-dummy.m"; sourceTree = "<group>"; };
+		1835E183452E53869C68AF36E189FE27 /* Pods-Sample-SampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sample-SampleUITests-umbrella.h"; sourceTree = "<group>"; };
+		1A1D15AF37BC6B5FE52F58F15F2D0D83 /* SoramitsuTableViewTitledHeaderCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewTitledHeaderCell.swift; sourceTree = "<group>"; };
+		1FAEE3C676502158D10A82C44C820345 /* SoramitsuLoadingTableViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuLoadingTableViewItem.swift; sourceTree = "<group>"; };
+		1FC7C1D36394E8F1DA543A7C08C52011 /* SoramitsuTableViewPaginationHandlerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewPaginationHandlerProtocol.swift; sourceTree = "<group>"; };
+		201E1A292E392293847502D2DF6988FC /* Picture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		20EE9788A4707B752432C830B63BF669 /* InputTextViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InputTextViewConfiguration.swift; sourceTree = "<group>"; };
+		218E5364AE25FC05E33EB369E54A2715 /* SoramitsuImageViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuImageViewConfiguration.swift; sourceTree = "<group>"; };
+		243E37FD61358AC73A3608AE5E26722D /* SoramitsuTableViewObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewObserver.swift; sourceTree = "<group>"; };
+		25C25154C298729A2529207A165DCD85 /* SoraUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SoraUIKit.h; path = SoraUIKit/SoraUIKit.h; sourceTree = "<group>"; };
+		26CD517AB03AEF7B3C0FECA3A73E4489 /* SoramitsuTableViewPaginator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewPaginator.swift; sourceTree = "<group>"; };
+		2784658CB3C728A9FC2CF611EAB65587 /* SoraUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SoraUIKit.modulemap; sourceTree = "<group>"; };
+		281785EADE549B9E97C6E487B5A09991 /* DarkStatusBarStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DarkStatusBarStyle.swift; sourceTree = "<group>"; };
+		28AFD0CED10E1E2B34B27A5BFE96F55E /* SoramitsuTableViewItemProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewItemProtocol.swift; sourceTree = "<group>"; };
+		29E90B40AF8C40C357657728720B497E /* SoramitsuConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuConfiguration.swift; sourceTree = "<group>"; };
+		2AF37FFACE0E392F0FF229DA9E35B344 /* DispatchQueue+Gecko.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Gecko.swift"; sourceTree = "<group>"; };
+		2AF44039899CE32DDB2E8943D52C0063 /* SoramitsuTapGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTapGestureRecognizer.swift; sourceTree = "<group>"; };
+		2B3569F31310E66897C16998A9906498 /* PoolViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PoolViewConfiguration.swift; sourceTree = "<group>"; };
+		2C179FD8F72E59CE37E334464D4CBE5B /* Shady.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Shady.swift; sourceTree = "<group>"; };
+		2D1759E5A5C5BB6483C9902BC3A48308 /* KeyboardEventsListnerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardEventsListnerHelper.swift; sourceTree = "<group>"; };
+		2DE1219A2FB9ED599AC95B118F4F51E2 /* NSObject+SoramitsuColorable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+SoramitsuColorable.swift"; sourceTree = "<group>"; };
+		2F3DF071DE92D32BDE18B132EA22D080 /* SoramitsuStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuStyle.swift; sourceTree = "<group>"; };
+		30AC8A1ADFD00DC9FEE1C3A07B99F0D7 /* SoramitsuTextItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTextItem.swift; sourceTree = "<group>"; };
+		31D0E0DCDED84DAF6288D7668F426E31 /* SoramitsuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuView.swift; sourceTree = "<group>"; };
+		32B3A06804F243FBADC12661D5C612D6 /* SoramitsuTableViewCellProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewCellProtocol.swift; sourceTree = "<group>"; };
+		32C9710232F4376C401BE816F1C6603E /* SoramitsuSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuSize.swift; sourceTree = "<group>"; };
+		355AB1AE94F5337D21B4E7340C248518 /* SoramitsuHapticType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuHapticType.swift; sourceTree = "<group>"; };
+		35A65994C147D31406EBD66B16ECE5B8 /* InputFieldConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InputFieldConfiguration.swift; sourceTree = "<group>"; };
+		3631A416C19E1AF5A682F5776832DCAA /* Pods-Sample-SampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample-SampleUITests-Info.plist"; sourceTree = "<group>"; };
+		3B74A222C56B30EA3BE35DBEC3217C60 /* Gap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Gap.swift; sourceTree = "<group>"; };
+		3D0094C9E72216C8883B2E75D3033676 /* SoramitsuTableViewTopPagination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewTopPagination.swift; sourceTree = "<group>"; };
+		3F230FDE1CD3A1D077948C5177BEA86A /* SoramitsuTextFieldConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTextFieldConfiguration.swift; sourceTree = "<group>"; };
+		4112718BF5FFC6858D03A5CE4322987D /* Array+SoramitsuUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+SoramitsuUI.swift"; sourceTree = "<group>"; };
+		433D44DE0295902D00C9210D9D303DBF /* SoramitsuActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuActivityIndicatorView.swift; sourceTree = "<group>"; };
+		449EA70B08B4ACD41EDE39BC7945D57C /* LightPalette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LightPalette.swift; sourceTree = "<group>"; };
+		44BD0F367395F98B04CAEE21D342CEB0 /* SoramitsuTableViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewType.swift; sourceTree = "<group>"; };
+		45DA94922B6F2FA759759DA2271E3CFC /* TabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		45FADBE32411A53F41B92108868C5032 /* StatusBarStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusBarStyle.swift; sourceTree = "<group>"; };
+		46D66FBB724693B89247CC78286D13F4 /* Pods-Sample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Sample"; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49EDBFBE9F97FCA272A3C1FDABFE188D /* SoramitsuButtonConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuButtonConfiguration.swift; sourceTree = "<group>"; };
+		4ABD93548E7B81D3651D2160B4825982 /* CornerRadius.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		4C4E92CA2A7EF8DEBA13ED0C04410255 /* SoramitsuViewControllerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuViewControllerConfiguration.swift; sourceTree = "<group>"; };
+		4CCD0E34069D2DB5F905F5B8138E6711 /* LightStatusBarStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LightStatusBarStyle.swift; sourceTree = "<group>"; };
+		4CD4930EFA3245E4A41124EC29F7E94F /* ScreenSizeMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreenSizeMapper.swift; sourceTree = "<group>"; };
+		4DAF266D6F1E455E71BFDF2DDDA0454B /* Pods-SampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SampleTests-dummy.m"; sourceTree = "<group>"; };
+		4ED3D1CDB5A6EAED2D43810AF3600CC6 /* Atom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Atom.swift; sourceTree = "<group>"; };
+		51EFCDDE8722FDAA3B7531933CA2BF4B /* Pods-SampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		52CE5E88EF1053743CC05F6A25B14810 /* Organism.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Organism.swift; sourceTree = "<group>"; };
+		52F79EA33DE6F406FF0B659D41B1284D /* Pods-Sample-SampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sample-SampleUITests.modulemap"; sourceTree = "<group>"; };
+		564C50E3C88C22F6E4674060775AB07E /* SoramitsuBaseButtonConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuBaseButtonConfiguration.swift; sourceTree = "<group>"; };
+		572EA85744F7CD6D14BDF299F4CCF6CA /* SoraUIKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SoraUIKit; path = SoraUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		575CBEDC3EC89FA6A8D148F62F63F0F2 /* ScrollViewContentInsetsHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScrollViewContentInsetsHelper.swift; sourceTree = "<group>"; };
+		5C0F97DDB7D1153E129157F2BED8306C /* Array+SoramitsuTableViewSectionProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+SoramitsuTableViewSectionProtocol.swift"; sourceTree = "<group>"; };
+		5C653FE5CCA10957CB1591AB8598F7D1 /* SoramitsuLoadingTableViewSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuLoadingTableViewSection.swift; sourceTree = "<group>"; };
+		5E5F7775BF25027E30A767CD3E16C0C7 /* Radii.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Radii.swift; sourceTree = "<group>"; };
+		5E7A84D424950EA9E6078A3C3E38325F /* SoramitsuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuButton.swift; sourceTree = "<group>"; };
+		5FDFE2D690C49F8DCF9215BB69D59669 /* SoramitsuButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuButtonStyle.swift; sourceTree = "<group>"; };
+		620947EDE1F7DE6202F4D51B9CE3ED87 /* States.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		636FF0014A51F97691DBF8B9C4D542DF /* InputTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		650F325E6900E88CC4DF2FC9DB601687 /* SoramitsuViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuViewConfiguration.swift; sourceTree = "<group>"; };
+		652F1C524BF34E7C3493FD5650546AF2 /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		6750AD7DAA0B72B05526B0A6F42C6764 /* Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		69AD84BC86CB5F88012DD35021809B98 /* SoramitsuShimmerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuShimmerView.swift; sourceTree = "<group>"; };
+		69EA988ACDD6F7FE9400B05276685A39 /* UpdateOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UpdateOptions.swift; sourceTree = "<group>"; };
+		6AE9BE0BC67785087CFE9DFD16BF0C72 /* Pods-Sample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample-Info.plist"; sourceTree = "<group>"; };
+		6CD39DCF2AD373CA00F5CD94274D624F /* SoramitsuTableViewBasicPagination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewBasicPagination.swift; sourceTree = "<group>"; };
+		6DEC5CB795C6A9D1B54DF38ED72DB762 /* DefaultRadii.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultRadii.swift; sourceTree = "<group>"; };
+		6E47FA37E158CBAA75A73F58FA113C60 /* Pods-SampleTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SampleTests"; path = Pods_SampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7A42B52DAD106A85961D72F3DAF6AB /* SoramitsuGroupedTableViewDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuGroupedTableViewDescriptor.swift; sourceTree = "<group>"; };
+		6FCF40CE0D1BB356686842018794298A /* Molecule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Molecule.swift; sourceTree = "<group>"; };
+		713ECBBA38C3B1DD602EC6952F449666 /* SoraUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SoraUIKit-umbrella.h"; sourceTree = "<group>"; };
+		719DA6E7758135A640DA1F81FF574DA8 /* SoramitsuLoadingPlaceholderDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuLoadingPlaceholderDecorator.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74575630DD2E4B59092F1006154B05D9 /* SoraUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SoraUIKit-dummy.m"; sourceTree = "<group>"; };
+		76D50398051696E64564022AF67A04F6 /* SoramitsuTextViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTextViewConfiguration.swift; sourceTree = "<group>"; };
+		775D4F9DEFF2A8DB05EC8F6E0EBFD958 /* SoramitsuShimmerViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuShimmerViewConfiguration.swift; sourceTree = "<group>"; };
+		77FAB41ABDE9858D86D8E86A6BE121FD /* SoraUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SoraUIKit-prefix.pch"; sourceTree = "<group>"; };
+		78174EFE7F28635471ECBCC67A0D1ACC /* SoramitsuHaptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuHaptic.swift; sourceTree = "<group>"; };
+		78ECE8F177F74C823BC121F92B8CB9F0 /* ObservableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
+		79DD7153F2EEDEB3B30AEC1D427D6F26 /* SoramitsuTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewCell.swift; sourceTree = "<group>"; };
+		7A9F783B8F7941C565F3DD3712FA00F9 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		7BAD3278619A3B50F347F68068B5D4A5 /* SoraUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SoraUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7C95D8F4DFC45355709A3690DF596E0D /* SoramitsuLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuLayout.swift; sourceTree = "<group>"; };
+		7D61793220802192BDCEE8ADC7286F63 /* SoramitsuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuViewController.swift; sourceTree = "<group>"; };
+		7E68C1BCDEE99682C63D5B0D98A029EF /* SoramitsuBlurDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuBlurDecorator.swift; sourceTree = "<group>"; };
+		7EFBD8D7DC7A13310179F68467CA40EC /* CABasicAnimation+Convenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CABasicAnimation+Convenience.swift"; sourceTree = "<group>"; };
+		81BFDC5621541CD129574B3F3EE84EAD /* Pods-Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample-acknowledgements.plist"; sourceTree = "<group>"; };
+		821606AC0188E3EDE6CDF816B234106F /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		8308EE043FC9FDB5B861F039D259432C /* SoramitsuLoadingTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuLoadingTableViewCell.swift; sourceTree = "<group>"; };
+		85593DA9E28FED70D7746F8140A5047D /* ImageButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		8779B49AEB01CF1CEAC0A371B5F5C053 /* SoramitsuOverlayDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuOverlayDecorator.swift; sourceTree = "<group>"; };
+		8B431CA7E1B6CB0971A1735908DF1CFA /* Pods-Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample-dummy.m"; sourceTree = "<group>"; };
+		8BE5E7B7E7BBC40FBBF60073581D1D87 /* Pods-SampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C13F7EA9CBB4C8F6EFAFC0FA795C29E /* SoramitsuInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuInsets.swift; sourceTree = "<group>"; };
+		8ECB9AF8FC549F42E47A322E1F5146F7 /* Pods-Sample-SampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample-SampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		98E77843CCEBB0E9D3B189688C77D684 /* SoramitsuTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTextView.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F5A9F17D65B43343E749DF864FE0897 /* SoramitsuScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuScrollView.swift; sourceTree = "<group>"; };
+		A22D2BA78DEA4F27D119C526754B1810 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		A3362EFE72E5B0A93555096568785B6E /* SoramitsuPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		A678E0569C5B1C17BEEEC4C47EE8BEDB /* SoramitsuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuCell.swift; sourceTree = "<group>"; };
+		A67B2496FB6B7AD119CD2559960223B5 /* ViewControllerObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewControllerObserver.swift; sourceTree = "<group>"; };
+		A6E13BDF21387E6C6776EDB1BA661F77 /* SoramitsuTableViewSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewSection.swift; sourceTree = "<group>"; };
+		A8B373F0B3C63B6BF493E1A8895A9604 /* InputAssetFieldConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InputAssetFieldConfiguration.swift; sourceTree = "<group>"; };
+		AAB80B9B754E1102F6992BAA81C25F2F /* SoramitsuActivityIndicatorViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuActivityIndicatorViewConfiguration.swift; sourceTree = "<group>"; };
+		AAF7D593AA8B792B84448503FD01340E /* SoramitsuStateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuStateDecorator.swift; sourceTree = "<group>"; };
+		AAF9B191289F766BC4C1CE7EB164AE89 /* ShadowData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShadowData.swift; sourceTree = "<group>"; };
+		AD596A6B33414CCD225719D1DD57E42A /* SoramitsuPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuPosition.swift; sourceTree = "<group>"; };
+		AD754FE1C3A4D04CCAD1E75FB306B633 /* Pods-Sample-SampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample-SampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B001D44CE4456449E55B564194B5D2B1 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B08D1F2770ACD1FA7C276F54311526A6 /* GElementDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GElementDescriptor.swift; sourceTree = "<group>"; };
+		B2E484DCC5AE08967C8A6864A6C918B6 /* Pods-Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-frameworks.sh"; sourceTree = "<group>"; };
+		B36A7DC12D74D2F6F322396A991A3FBA /* SoramitsuStackViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuStackViewConfiguration.swift; sourceTree = "<group>"; };
+		B92BED64366572132FD384DF3AA131BE /* Pods-Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B92DD22C0E5915D4747819E0C2254071 /* SoramitsuStatusBarManaging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuStatusBarManaging.swift; sourceTree = "<group>"; };
+		BB96D20893A5AF98665968C7A55D0DB0 /* SoramitsuControlConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuControlConfiguration.swift; sourceTree = "<group>"; };
+		BCFB95B1BFAE83E711BC18C9D8AFFDD5 /* SoramitsuTableViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewConfiguration.swift; sourceTree = "<group>"; };
+		BDD7E4F743F23562BC4FBF462FB280FD /* ThemeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		BDF00117174EE7CB6AB70F599778B6EF /* main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BFF5637D2B0B1B20E0EAEF6F58DA1600 /* SoramitsuLabelConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuLabelConfiguration.swift; sourceTree = "<group>"; };
+		C01AD2E9C432C049D8FA10F5BAF65B8F /* SoramitsuScrollViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuScrollViewContext.swift; sourceTree = "<group>"; };
+		C3621E2864ABAAD1BCC1C932C27D047B /* SoramitsuTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTextField.swift; sourceTree = "<group>"; };
+		C5531C0E3C446F63E6C77DC0F74EB23A /* SoraUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SoraUIKit-Info.plist"; sourceTree = "<group>"; };
+		C7710BD21DBC3B3E342726DC5BA63919 /* MainThreadChecker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainThreadChecker.swift; sourceTree = "<group>"; };
+		C8DA6CE1A87FF1B9A8EB6D32C60434BA /* SoramitsuLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuLabel.swift; sourceTree = "<group>"; };
+		C9525524510EF81B34C60B2783EEC30E /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		C97C4CB495AE6322336EE3C0B4D13AA2 /* SoramitsuTableViewSpacerItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewSpacerItem.swift; sourceTree = "<group>"; };
+		CB2C80AFF324B2F6C05285DD377504A1 /* Pods-Sample-SampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample-SampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CB86FC9B732E93E6E2470F1E6AA8934B /* Pods-SampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SampleTests-umbrella.h"; sourceTree = "<group>"; };
+		CBC2BFE8B7E6EA477D9CC2E5FFE47204 /* SoramitsuControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuControl.swift; sourceTree = "<group>"; };
+		CDBFE1D1799364347F552CE463C2DF10 /* DefaultShady.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultShady.swift; sourceTree = "<group>"; };
+		CDD14FFD1B10B1834BB0C064CFB619D4 /* SoramitsuStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuStackView.swift; sourceTree = "<group>"; };
+		CE82F189C1F7DB67F8FEC9A9C38E55B5 /* SoramitsuMenuItemAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuMenuItemAction.swift; sourceTree = "<group>"; };
+		D0379D5EA71FB62DA1165A75656B059F /* Pods-Sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sample-umbrella.h"; sourceTree = "<group>"; };
+		D040EAB602D33CF5D85640CF638975C3 /* SoramitsuTextAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTextAttributes.swift; sourceTree = "<group>"; };
+		D2F6AA993C6B17AA500F605B51630E5C /* Colors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D3B42A32568CF2F67B9C1C46A02E4DEB /* ImageButtonConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageButtonConfiguration.swift; sourceTree = "<group>"; };
+		D44B06CA6AF7ABECDA083B5F2AB9576B /* SoramitsuButtonType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuButtonType.swift; sourceTree = "<group>"; };
+		D48395F5ECB56A78DEE154287F3C420A /* SoramitsuBaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuBaseViewController.swift; sourceTree = "<group>"; };
+		D8B58F66048B729BF9130EFDC95E5519 /* HistoryTransactionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryTransactionView.swift; sourceTree = "<group>"; };
+		DA0EFE233CC3A4AD96FA63702FAC1405 /* Fonts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		DAD5A1A09A3769841958D5994DF7A28B /* Pods-Sample-SampleUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Sample-SampleUITests"; path = Pods_Sample_SampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA36D65E543BD9888C5CA3C4E654A86 /* SoramitsuThemeType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuThemeType.swift; sourceTree = "<group>"; };
+		DBEE32F5DF7803FF94EB8707DEF58E8D /* CustomVisualEffectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomVisualEffectView.swift; sourceTree = "<group>"; };
+		DC2FFE30F8B523D6E68F03ABCBCA475A /* HistoryTransactionViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryTransactionViewConfiguration.swift; sourceTree = "<group>"; };
+		E2443AD5989A5B084BC6D65BA2AC2F82 /* SoramitsuTableViewSpaceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewSpaceView.swift; sourceTree = "<group>"; };
+		E4938609B07C47DE9A801D8833DF6973 /* SoramitsuScrollViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuScrollViewConfiguration.swift; sourceTree = "<group>"; };
+		E56CECB1C12ADFE3DEE51DF16A9EC6C0 /* SoramitsuTableViewTitledHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewTitledHeader.swift; sourceTree = "<group>"; };
+		E6579F77191C0860655A6098C51119B2 /* SoramitsuUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuUI.swift; sourceTree = "<group>"; };
+		E6CDDC2E5C27FCA2AD345F9F251D8AE0 /* Palette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		E7AC5490E884D6AA024C247BB25FD703 /* SoramitsuHapticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuHapticable.swift; sourceTree = "<group>"; };
+		E800F6B2B102AA5AF86D15A18DAA85E9 /* SoramitsuAttributedText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuAttributedText.swift; sourceTree = "<group>"; };
+		E81D7EE75F55CE7786FA62D29A5551D0 /* Pods-Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sample.modulemap"; sourceTree = "<group>"; };
+		E949D9B9B24F32C21F2F930E97299C27 /* Pods-SampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E978BD33E844C7A2D6A07F9AA48755E3 /* SoramitsuTableViewFoldableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewFoldableSection.swift; sourceTree = "<group>"; };
+		EA009F047622FAD5C481A425A6F56107 /* SoramitsuTableViewSectionProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewSectionProtocol.swift; sourceTree = "<group>"; };
+		EA4405334ADEE8B8C226009CB357016D /* SoramitsuTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableView.swift; sourceTree = "<group>"; };
+		EDAB2FB18E9E9D123A4FD07782514024 /* WalletViewMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletViewMode.swift; sourceTree = "<group>"; };
+		EE29710A403C813680328C7FC77AADA1 /* InputField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		EF7BE951BB45BF31D68BE081DD97B24E /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		EFAC15EE333C98674106AF9EF1C17882 /* SoramitsuColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuColor.swift; sourceTree = "<group>"; };
+		F027F97F12AECD4CD7A3327E6E897A4E /* ViewObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewObserver.swift; sourceTree = "<group>"; };
+		F1FA8493D8B12DE8A9A8CE9B9BE15B7E /* ObservationProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObservationProtocols.swift; sourceTree = "<group>"; };
+		F3567DE6447757400A48C9CCAE33A75C /* PoolView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PoolView.swift; sourceTree = "<group>"; };
+		F3F9CF16D96D9AF5260FDE8434FAA7E2 /* ThemeStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemeStorage.swift; sourceTree = "<group>"; };
+		F555825EE3C5F46523640299827061B0 /* AssetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
+		F64B5B54FC6CF099E53AB44022869AFF /* SoramitsuLoadingIndicatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuLoadingIndicatable.swift; sourceTree = "<group>"; };
+		F6B485FB9CB3DCE7B36D7204F91F5125 /* Pods-SampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F840C15A380CEE795002A249D4851F02 /* SoramitsuImageViewImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuImageViewImageView.swift; sourceTree = "<group>"; };
+		F9FC4C1D00ADAB5CA88517D74AD11436 /* DarkPalette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DarkPalette.swift; sourceTree = "<group>"; };
+		FC05F32D50D025ED89AA11A21E6BE7E6 /* Corner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Corner.swift; sourceTree = "<group>"; };
+		FD178BF532B3B3E0F9275B63F88A781F /* Pods-SampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SampleTests.modulemap"; sourceTree = "<group>"; };
+		FDB049F42B1E2BA8DABC01A84F4B7E8E /* SoraUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SoraUIKit.debug.xcconfig; sourceTree = "<group>"; };
+		FDE8D843BD9E2EFF339121DF274B7925 /* BlurViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlurViewController.swift; sourceTree = "<group>"; };
+		FE9DF9762C170B91C22F8508925ABAA8 /* SoramitsuTableViewCellConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoramitsuTableViewCellConfiguration.swift; sourceTree = "<group>"; };
+		FED050637BF8D915FB0A1BAADADB65CC /* Margin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BBD9E13DD60C0D042DCE0688D30711B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE4A8D8E508DC764C862B4775D258AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C003B699ECC56102DB8F5F2025DCC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40424D9414E85DCABADB002AF273223 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629E52AB6F0DDADB5BAB87CB0DFCB1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67296A5326ACECF97969A1D8C0BD56E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA66729B17AD28F4D26B61FE2301B459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71466BB2113CB3D7C9856A264E714C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00047643F6816F7F93BA8E912CB66A4B /* AttributedText */ = {
+			isa = PBXGroup;
+			children = (
+				E800F6B2B102AA5AF86D15A18DAA85E9 /* SoramitsuAttributedText.swift */,
+				D040EAB602D33CF5D85640CF638975C3 /* SoramitsuTextAttributes.swift */,
+				30AC8A1ADFD00DC9FEE1C3A07B99F0D7 /* SoramitsuTextItem.swift */,
+			);
+			name = AttributedText;
+			path = AttributedText;
+			sourceTree = "<group>";
+		};
+		03807BE635BD91FE2A22C03F6EFEEFFC /* States */ = {
+			isa = PBXGroup;
+			children = (
+				620947EDE1F7DE6202F4D51B9CE3ED87 /* States.swift */,
+			);
+			name = States;
+			path = States;
+			sourceTree = "<group>";
+		};
+		042485F9BA66D20FA7B1AC764E0C7554 /* InputAssetField */ = {
+			isa = PBXGroup;
+			children = (
+				0CF27AA0F73588BB1C086149E5E639B8 /* InputAssetField.swift */,
+				A8B373F0B3C63B6BF493E1A8895A9604 /* InputAssetFieldConfiguration.swift */,
+			);
+			name = InputAssetField;
+			path = InputAssetField;
+			sourceTree = "<group>";
+		};
+		0D6B5039DF46B3AB127A65977324C9A3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B9C8774D298FAFF34B849B804DB57C87 /* Atoms */,
+				FE3AD372A5DB2A8AE217941296914AD7 /* Decorators */,
+				4C48E6F220D29E12A95B0A8B64EA49B2 /* Descriptors */,
+				1B7C3AC7CD16D8E1A1BDB8D873A968FA /* Molecules */,
+				315FBE34729DD20ECD09DC670C27559F /* Organisms */,
+				D74DCDED122DBB53DCDADEFB95C7A1AC /* Protocols */,
+				9CC82A7E3C6F023EB5698BD8C8B704CA /* Quarks */,
+				FAC49B9718403D999B928EC75C45BE01 /* Utils */,
+			);
+			name = Components;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		14E5FB9D951B56DC8AE1BB23421CDA2C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D97403691DCFF8FDEC86EE8EA5D13A91 /* SoraUIKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1ADB3B29286E291B7A35B0C46BC10DE8 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				5B79C4F6A80CDD5D2416D5B263E6F638 /* TitledHeader */,
+			);
+			name = Headers;
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		1B7C3AC7CD16D8E1A1BDB8D873A968FA /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+				9DF903BA71C62115C93574C04E12A354 /* Asset */,
+				E8B00D8D0B7C89377B2016EB52436783 /* Button */,
+				796BD63EBB752429513C2C37318F0304 /* History */,
+				2438B1F9DCC55186FB66420855306CFE /* ImageButton */,
+				042485F9BA66D20FA7B1AC764E0C7554 /* InputAssetField */,
+				A2D922C10C9CFACFDC3466AD5484B71B /* InputField */,
+				776B4FF3D53991B59A632615DD76773E /* InputTextView */,
+				39B95C54426EEB5D7E666A98FBA4512C /* Pool */,
+				DD622453A5DD90561FA8E10E0EF013B1 /* ShimmerView */,
+				E048E2D7B22B42C6BB6481965667D70E /* Tabbar */,
+				4E48F98EC17E40437DB4B8D2FECB393C /* TableView */,
+			);
+			name = Molecules;
+			path = Molecules;
+			sourceTree = "<group>";
+		};
+		2438B1F9DCC55186FB66420855306CFE /* ImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				85593DA9E28FED70D7746F8140A5047D /* ImageButton.swift */,
+				D3B42A32568CF2F67B9C1C46A02E4DEB /* ImageButtonConfiguration.swift */,
+			);
+			name = ImageButton;
+			path = ImageButton;
+			sourceTree = "<group>";
+		};
+		252A1B7C16F37518978EB0B5DC5A5493 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				98E77843CCEBB0E9D3B189688C77D684 /* SoramitsuTextView.swift */,
+				76D50398051696E64564022AF67A04F6 /* SoramitsuTextViewConfiguration.swift */,
+			);
+			name = TextView;
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		267EE823B79F8BE453EC05049539DAE9 /* Pods-Sample-SampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52F79EA33DE6F406FF0B659D41B1284D /* Pods-Sample-SampleUITests.modulemap */,
+				AD754FE1C3A4D04CCAD1E75FB306B633 /* Pods-Sample-SampleUITests-acknowledgements.markdown */,
+				CB2C80AFF324B2F6C05285DD377504A1 /* Pods-Sample-SampleUITests-acknowledgements.plist */,
+				160988A2F5A0E0E4ADD71F58D8A3277A /* Pods-Sample-SampleUITests-dummy.m */,
+				034D1BBE8ED28C4427B2838B9F4A83F1 /* Pods-Sample-SampleUITests-frameworks.sh */,
+				3631A416C19E1AF5A682F5776832DCAA /* Pods-Sample-SampleUITests-Info.plist */,
+				1835E183452E53869C68AF36E189FE27 /* Pods-Sample-SampleUITests-umbrella.h */,
+				8ECB9AF8FC549F42E47A322E1F5146F7 /* Pods-Sample-SampleUITests.debug.xcconfig */,
+				0B9EFB96F8FC819B8BCD85E5487C121D /* Pods-Sample-SampleUITests.release.xcconfig */,
+			);
+			name = "Pods-Sample-SampleUITests";
+			path = "Target Support Files/Pods-Sample-SampleUITests";
+			sourceTree = "<group>";
+		};
+		292F2C960C8FEF78F70C9735B86C7C06 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7BAD3278619A3B50F347F68068B5D4A5 /* SoraUIKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2970BD5015532AADC1F6252802DC9346 /* Pods-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				E81D7EE75F55CE7786FA62D29A5551D0 /* Pods-Sample.modulemap */,
+				B92BED64366572132FD384DF3AA131BE /* Pods-Sample-acknowledgements.markdown */,
+				81BFDC5621541CD129574B3F3EE84EAD /* Pods-Sample-acknowledgements.plist */,
+				8B431CA7E1B6CB0971A1735908DF1CFA /* Pods-Sample-dummy.m */,
+				B2E484DCC5AE08967C8A6864A6C918B6 /* Pods-Sample-frameworks.sh */,
+				6AE9BE0BC67785087CFE9DFD16BF0C72 /* Pods-Sample-Info.plist */,
+				D0379D5EA71FB62DA1165A75656B059F /* Pods-Sample-umbrella.h */,
+				A22D2BA78DEA4F27D119C526754B1810 /* Pods-Sample.debug.xcconfig */,
+				C9525524510EF81B34C60B2783EEC30E /* Pods-Sample.release.xcconfig */,
+			);
+			name = "Pods-Sample";
+			path = "Target Support Files/Pods-Sample";
+			sourceTree = "<group>";
+		};
+		2A1623C54BD78AA8FC41D220BFFCF577 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				928C637A4CB9A9ED31423853B370680F /* SpaceItem */,
+			);
+			name = Items;
+			path = Items;
+			sourceTree = "<group>";
+		};
+		315FBE34729DD20ECD09DC670C27559F /* Organisms */ = {
+			isa = PBXGroup;
+			children = (
+				FDE8D843BD9E2EFF339121DF274B7925 /* BlurViewController.swift */,
+				BC84ADBE5BB01C5094C934FAF7D03711 /* BaseViewController */,
+				6887F9EFAC7B411FA135BDBFD6E5014F /* ViewController */,
+			);
+			name = Organisms;
+			path = Organisms;
+			sourceTree = "<group>";
+		};
+		33B25DE91B5A7CAB4E6B284D2A2A86D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46D66FBB724693B89247CC78286D13F4 /* Pods-Sample */,
+				DAD5A1A09A3769841958D5994DF7A28B /* Pods-Sample-SampleUITests */,
+				6E47FA37E158CBAA75A73F58FA113C60 /* Pods-SampleTests */,
+				572EA85744F7CD6D14BDF299F4CCF6CA /* SoraUIKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3692062666C2B09D4AF0DC1617A2CD01 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				218E5364AE25FC05E33EB369E54A2715 /* SoramitsuImageViewConfiguration.swift */,
+				F840C15A380CEE795002A249D4851F02 /* SoramitsuImageViewImageView.swift */,
+			);
+			name = ImageView;
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		390C406C6006859ACD2618D32F6684D2 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				8308EE043FC9FDB5B861F039D259432C /* SoramitsuLoadingTableViewCell.swift */,
+				1FAEE3C676502158D10A82C44C820345 /* SoramitsuLoadingTableViewItem.swift */,
+				5C653FE5CCA10957CB1591AB8598F7D1 /* SoramitsuLoadingTableViewSection.swift */,
+			);
+			name = Loading;
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		3927B8DCC2B652BAB478BE430465F0B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2784658CB3C728A9FC2CF611EAB65587 /* SoraUIKit.modulemap */,
+				74575630DD2E4B59092F1006154B05D9 /* SoraUIKit-dummy.m */,
+				C5531C0E3C446F63E6C77DC0F74EB23A /* SoraUIKit-Info.plist */,
+				77FAB41ABDE9858D86D8E86A6BE121FD /* SoraUIKit-prefix.pch */,
+				713ECBBA38C3B1DD602EC6952F449666 /* SoraUIKit-umbrella.h */,
+				FDB049F42B1E2BA8DABC01A84F4B7E8E /* SoraUIKit.debug.xcconfig */,
+				0E0B9464CBE009C1C4E75676D6C90F95 /* SoraUIKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Sample/Pods/Target Support Files/SoraUIKit";
+			sourceTree = "<group>";
+		};
+		39B95C54426EEB5D7E666A98FBA4512C /* Pool */ = {
+			isa = PBXGroup;
+			children = (
+				F3567DE6447757400A48C9CCAE33A75C /* PoolView.swift */,
+				2B3569F31310E66897C16998A9906498 /* PoolViewConfiguration.swift */,
+			);
+			name = Pool;
+			path = Pool;
+			sourceTree = "<group>";
+		};
+		3F560190894AA09D7671B92E08EA0914 /* Radii */ = {
+			isa = PBXGroup;
+			children = (
+				5E5F7775BF25027E30A767CD3E16C0C7 /* Radii.swift */,
+			);
+			name = Radii;
+			path = Radii;
+			sourceTree = "<group>";
+		};
+		48F67A4F27EA8025EBCF0726C66BA5C8 /* Blur */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE32F5DF7803FF94EB8707DEF58E8D /* CustomVisualEffectView.swift */,
+			);
+			name = Blur;
+			path = Blur;
+			sourceTree = "<group>";
+		};
+		49FD8478CC743A5298760414F26CF171 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA8493D8B12DE8A9A8CE9B9BE15B7E /* ObservationProtocols.swift */,
+				E6CDDC2E5C27FCA2AD345F9F251D8AE0 /* Palette.swift */,
+				2F3DF071DE92D32BDE18B132EA22D080 /* SoramitsuStyle.swift */,
+				DBA36D65E543BD9888C5CA3C4E654A86 /* SoramitsuThemeType.swift */,
+				45FADBE32411A53F41B92108868C5032 /* StatusBarStyle.swift */,
+				BDD7E4F743F23562BC4FBF462FB280FD /* ThemeManager.swift */,
+				F3F9CF16D96D9AF5260FDE8434FAA7E2 /* ThemeStorage.swift */,
+				69EA988ACDD6F7FE9400B05276685A39 /* UpdateOptions.swift */,
+			);
+			name = Style;
+			path = Style;
+			sourceTree = "<group>";
+		};
+		4C48E6F220D29E12A95B0A8B64EA49B2 /* Descriptors */ = {
+			isa = PBXGroup;
+			children = (
+				B08D1F2770ACD1FA7C276F54311526A6 /* GElementDescriptor.swift */,
+			);
+			name = Descriptors;
+			path = Descriptors;
+			sourceTree = "<group>";
+		};
+		4E48F98EC17E40437DB4B8D2FECB393C /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A678E0569C5B1C17BEEEC4C47EE8BEDB /* SoramitsuCell.swift */,
+				CE82F189C1F7DB67F8FEC9A9C38E55B5 /* SoramitsuMenuItemAction.swift */,
+				C01AD2E9C432C049D8FA10F5BAF65B8F /* SoramitsuScrollViewContext.swift */,
+				EA4405334ADEE8B8C226009CB357016D /* SoramitsuTableView.swift */,
+				32B3A06804F243FBADC12661D5C612D6 /* SoramitsuTableViewCellProtocol.swift */,
+				BCFB95B1BFAE83E711BC18C9D8AFFDD5 /* SoramitsuTableViewConfiguration.swift */,
+				E978BD33E844C7A2D6A07F9AA48755E3 /* SoramitsuTableViewFoldableSection.swift */,
+				28AFD0CED10E1E2B34B27A5BFE96F55E /* SoramitsuTableViewItemProtocol.swift */,
+				243E37FD61358AC73A3608AE5E26722D /* SoramitsuTableViewObserver.swift */,
+				A6E13BDF21387E6C6776EDB1BA661F77 /* SoramitsuTableViewSection.swift */,
+				EA009F047622FAD5C481A425A6F56107 /* SoramitsuTableViewSectionProtocol.swift */,
+				44BD0F367395F98B04CAEE21D342CEB0 /* SoramitsuTableViewType.swift */,
+				6A2F6930B16A20BE46809AE2323817F8 /* Descriptors */,
+				1ADB3B29286E291B7A35B0C46BC10DE8 /* Headers */,
+				2A1623C54BD78AA8FC41D220BFFCF577 /* Items */,
+				390C406C6006859ACD2618D32F6684D2 /* Loading */,
+				8488E8E1A199070B3B7901BD7F4622D6 /* Pagination */,
+			);
+			name = TableView;
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		4E5A5895880F504F7E850B199FEB4941 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A9F17D65B43343E749DF864FE0897 /* SoramitsuScrollView.swift */,
+				E4938609B07C47DE9A801D8833DF6973 /* SoramitsuScrollViewConfiguration.swift */,
+			);
+			name = ScrollView;
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		54FF2AD32C7522B4E135262F590EAA89 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				C3621E2864ABAAD1BCC1C932C27D047B /* SoramitsuTextField.swift */,
+				3F230FDE1CD3A1D077948C5177BEA86A /* SoramitsuTextFieldConfiguration.swift */,
+			);
+			name = TextField;
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B79C4F6A80CDD5D2416D5B263E6F638 /* TitledHeader */ = {
+			isa = PBXGroup;
+			children = (
+				E56CECB1C12ADFE3DEE51DF16A9EC6C0 /* SoramitsuTableViewTitledHeader.swift */,
+				1A1D15AF37BC6B5FE52F58F15F2D0D83 /* SoramitsuTableViewTitledHeaderCell.swift */,
+			);
+			name = TitledHeader;
+			path = TitledHeader;
+			sourceTree = "<group>";
+		};
+		60F03FEBC69DFF106DD3D52E317BD2AF /* Corner */ = {
+			isa = PBXGroup;
+			children = (
+				FC05F32D50D025ED89AA11A21E6BE7E6 /* Corner.swift */,
+			);
+			name = Corner;
+			path = Corner;
+			sourceTree = "<group>";
+		};
+		6887F9EFAC7B411FA135BDBFD6E5014F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B92DD22C0E5915D4747819E0C2254071 /* SoramitsuStatusBarManaging.swift */,
+				7D61793220802192BDCEE8ADC7286F63 /* SoramitsuViewController.swift */,
+				4C4E92CA2A7EF8DEBA13ED0C04410255 /* SoramitsuViewControllerConfiguration.swift */,
+			);
+			name = ViewController;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6A2F6930B16A20BE46809AE2323817F8 /* Descriptors */ = {
+			isa = PBXGroup;
+			children = (
+				6F7A42B52DAD106A85961D72F3DAF6AB /* SoramitsuGroupedTableViewDescriptor.swift */,
+				15D636432066AB7C8702C6792FE8E253 /* SoramitsuPlainTableViewDescriptor.swift */,
+			);
+			name = Descriptors;
+			path = Descriptors;
+			sourceTree = "<group>";
+		};
+		6A6258376DF515C57C22B3D325B75B13 /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				78174EFE7F28635471ECBCC67A0D1ACC /* SoramitsuHaptic.swift */,
+				E7AC5490E884D6AA024C247BB25FD703 /* SoramitsuHapticable.swift */,
+				355AB1AE94F5337D21B4E7340C248518 /* SoramitsuHapticType.swift */,
+			);
+			name = Haptic;
+			path = Haptic;
+			sourceTree = "<group>";
+		};
+		73C526D654A32DB4542ADC88F3BECA4C /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2BFE8B7E6EA477D9CC2E5FFE47204 /* SoramitsuControl.swift */,
+				BB96D20893A5AF98665968C7A55D0DB0 /* SoramitsuControlConfiguration.swift */,
+			);
+			name = Control;
+			path = Control;
+			sourceTree = "<group>";
+		};
+		776B4FF3D53991B59A632615DD76773E /* InputTextView */ = {
+			isa = PBXGroup;
+			children = (
+				636FF0014A51F97691DBF8B9C4D542DF /* InputTextView.swift */,
+				20EE9788A4707B752432C830B63BF669 /* InputTextViewConfiguration.swift */,
+			);
+			name = InputTextView;
+			path = InputTextView;
+			sourceTree = "<group>";
+		};
+		77B6311CB42C74CF9641EAFFAFAB2BE9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0634DB864636B1354D9EFE4DCDC7CCD9 /* FontData.swift */,
+				E6579F77191C0860655A6098C51119B2 /* SoramitsuUI.swift */,
+				E54DC5360E55250482FA2F99C5B921D3 /* Configuration */,
+				49FD8478CC743A5298760414F26CF171 /* Style */,
+			);
+			name = Core;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		796BD63EBB752429513C2C37318F0304 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				D8B58F66048B729BF9130EFDC95E5519 /* HistoryTransactionView.swift */,
+				DC2FFE30F8B523D6E68F03ABCBCA475A /* HistoryTransactionViewConfiguration.swift */,
+			);
+			name = History;
+			path = History;
+			sourceTree = "<group>";
+		};
+		7B4CA0B69DF26F701ADE2A404238A1E6 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				3B74A222C56B30EA3BE35DBEC3217C60 /* Gap.swift */,
+				FED050637BF8D915FB0A1BAADADB65CC /* Margin.swift */,
+				652F1C524BF34E7C3493FD5650546AF2 /* Padding.swift */,
+				7C95D8F4DFC45355709A3690DF596E0D /* SoramitsuLayout.swift */,
+			);
+			name = Layout;
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		7DA78DC694D432AAE5E6C930E5D779A4 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				79DD7153F2EEDEB3B30AEC1D427D6F26 /* SoramitsuTableViewCell.swift */,
+				FE9DF9762C170B91C22F8508925ABAA8 /* SoramitsuTableViewCellConfiguration.swift */,
+			);
+			name = TableViewCell;
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		8488E8E1A199070B3B7901BD7F4622D6 /* Pagination */ = {
+			isa = PBXGroup;
+			children = (
+				6CD39DCF2AD373CA00F5CD94274D624F /* SoramitsuTableViewBasicPagination.swift */,
+				1FC7C1D36394E8F1DA543A7C08C52011 /* SoramitsuTableViewPaginationHandlerProtocol.swift */,
+				26CD517AB03AEF7B3C0FECA3A73E4489 /* SoramitsuTableViewPaginator.swift */,
+				3D0094C9E72216C8883B2E75D3033676 /* SoramitsuTableViewTopPagination.swift */,
+			);
+			name = Pagination;
+			path = Pagination;
+			sourceTree = "<group>";
+		};
+		8B29A9FA65A22F29831D4E6271737815 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				A3362EFE72E5B0A93555096568785B6E /* SoramitsuPanGestureRecognizer.swift */,
+				2AF44039899CE32DDB2E8943D52C0063 /* SoramitsuTapGestureRecognizer.swift */,
+			);
+			name = Gestures;
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		8B4794E264AEE3F8DFE0DEFC0ADD039C /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				CDD14FFD1B10B1834BB0C064CFB619D4 /* SoramitsuStackView.swift */,
+				B36A7DC12D74D2F6F322396A991A3FBA /* SoramitsuStackViewConfiguration.swift */,
+			);
+			name = StackView;
+			path = StackView;
+			sourceTree = "<group>";
+		};
+		91105CBE3D32E3222BBE3E58F0E16621 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				C8DA6CE1A87FF1B9A8EB6D32C60434BA /* SoramitsuLabel.swift */,
+				BFF5637D2B0B1B20E0EAEF6F58DA1600 /* SoramitsuLabelConfiguration.swift */,
+			);
+			name = Label;
+			path = Label;
+			sourceTree = "<group>";
+		};
+		928C637A4CB9A9ED31423853B370680F /* SpaceItem */ = {
+			isa = PBXGroup;
+			children = (
+				C97C4CB495AE6322336EE3C0B4D13AA2 /* SoramitsuTableViewSpacerItem.swift */,
+				E2443AD5989A5B084BC6D65BA2AC2F82 /* SoramitsuTableViewSpaceView.swift */,
+			);
+			name = SpaceItem;
+			path = SpaceItem;
+			sourceTree = "<group>";
+		};
+		96021789B4C7227B137D668D74E057DF /* Pods-SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD178BF532B3B3E0F9275B63F88A781F /* Pods-SampleTests.modulemap */,
+				F6B485FB9CB3DCE7B36D7204F91F5125 /* Pods-SampleTests-acknowledgements.markdown */,
+				E949D9B9B24F32C21F2F930E97299C27 /* Pods-SampleTests-acknowledgements.plist */,
+				4DAF266D6F1E455E71BFDF2DDDA0454B /* Pods-SampleTests-dummy.m */,
+				08B09C8F59E47A8465864914CE75C2D3 /* Pods-SampleTests-Info.plist */,
+				CB86FC9B732E93E6E2470F1E6AA8934B /* Pods-SampleTests-umbrella.h */,
+				8BE5E7B7E7BBC40FBBF60073581D1D87 /* Pods-SampleTests.debug.xcconfig */,
+				51EFCDDE8722FDAA3B7531933CA2BF4B /* Pods-SampleTests.release.xcconfig */,
+			);
+			name = "Pods-SampleTests";
+			path = "Target Support Files/Pods-SampleTests";
+			sourceTree = "<group>";
+		};
+		9A73D072F92F7901DC84A413AEF3405A /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				BDF00117174EE7CB6AB70F599778B6EF /* main.swift */,
+			);
+			name = Scripts;
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		9AD96DB4A6413EB7E180EA481DB07FAC /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				201E1A292E392293847502D2DF6988FC /* Picture.swift */,
+			);
+			name = Album;
+			path = Album;
+			sourceTree = "<group>";
+		};
+		9CC82A7E3C6F023EB5698BD8C8B704CA /* Quarks */ = {
+			isa = PBXGroup;
+			children = (
+				2DE1219A2FB9ED599AC95B118F4F51E2 /* NSObject+SoramitsuColorable.swift */,
+				9AD96DB4A6413EB7E180EA481DB07FAC /* Album */,
+				00047643F6816F7F93BA8E912CB66A4B /* AttributedText */,
+				60F03FEBC69DFF106DD3D52E317BD2AF /* Corner */,
+				7B4CA0B69DF26F701ADE2A404238A1E6 /* Layout */,
+				3F560190894AA09D7671B92E08EA0914 /* Radii */,
+				E7F2D8F8D7A1B2E1B6DF37B2C8AA9C64 /* Shadow */,
+				03807BE635BD91FE2A22C03F6EFEEFFC /* States */,
+				A46D3A2963514F083281568A5E29984F /* StatusBarStyle */,
+			);
+			name = Quarks;
+			path = Quarks;
+			sourceTree = "<group>";
+		};
+		9DF903BA71C62115C93574C04E12A354 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				F555825EE3C5F46523640299827061B0 /* AssetView.swift */,
+				11B8305D0E3AC482BE8BCFB41CDBD271 /* AssetViewConfiguration.swift */,
+				EDAB2FB18E9E9D123A4FD07782514024 /* WalletViewMode.swift */,
+			);
+			name = Asset;
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		A2D922C10C9CFACFDC3466AD5484B71B /* InputField */ = {
+			isa = PBXGroup;
+			children = (
+				EE29710A403C813680328C7FC77AADA1 /* InputField.swift */,
+				35A65994C147D31406EBD66B16ECE5B8 /* InputFieldConfiguration.swift */,
+			);
+			name = InputField;
+			path = InputField;
+			sourceTree = "<group>";
+		};
+		A46D3A2963514F083281568A5E29984F /* StatusBarStyle */ = {
+			isa = PBXGroup;
+			children = (
+				281785EADE549B9E97C6E487B5A09991 /* DarkStatusBarStyle.swift */,
+				4CCD0E34069D2DB5F905F5B8138E6711 /* LightStatusBarStyle.swift */,
+			);
+			name = StatusBarStyle;
+			path = StatusBarStyle;
+			sourceTree = "<group>";
+		};
+		B7BA443A843FE41C6A0FCCBFC5F566DD /* Codegen */ = {
+			isa = PBXGroup;
+			children = (
+				D2F6AA993C6B17AA500F605B51630E5C /* Colors.swift */,
+				4ABD93548E7B81D3651D2160B4825982 /* CornerRadius.swift */,
+				F9FC4C1D00ADAB5CA88517D74AD11436 /* DarkPalette.swift */,
+				DA0EFE233CC3A4AD96FA63702FAC1405 /* Fonts.swift */,
+				449EA70B08B4ACD41EDE39BC7945D57C /* LightPalette.swift */,
+				EFAC15EE333C98674106AF9EF1C17882 /* SoramitsuColor.swift */,
+			);
+			name = Codegen;
+			path = Codegen;
+			sourceTree = "<group>";
+		};
+		B9C8774D298FAFF34B849B804DB57C87 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				EE9E5DA7EB4E71CD6C3A79139538E19A /* ActivityIndicatorView */,
+				73C526D654A32DB4542ADC88F3BECA4C /* Control */,
+				3692062666C2B09D4AF0DC1617A2CD01 /* ImageView */,
+				91105CBE3D32E3222BBE3E58F0E16621 /* Label */,
+				4E5A5895880F504F7E850B199FEB4941 /* ScrollView */,
+				8B4794E264AEE3F8DFE0DEFC0ADD039C /* StackView */,
+				7DA78DC694D432AAE5E6C930E5D779A4 /* TableViewCell */,
+				54FF2AD32C7522B4E135262F590EAA89 /* TextField */,
+				252A1B7C16F37518978EB0B5DC5A5493 /* TextView */,
+				D7ABC96944D38E6DABBAC59679A58218 /* View */,
+			);
+			name = Atoms;
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+		BC84ADBE5BB01C5094C934FAF7D03711 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D48395F5ECB56A78DEE154287F3C420A /* SoramitsuBaseViewController.swift */,
+			);
+			name = BaseViewController;
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		BF7068859EF9451D610C221B93849031 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5C0F97DDB7D1153E129157F2BED8306C /* Array+SoramitsuTableViewSectionProtocol.swift */,
+				4112718BF5FFC6858D03A5CE4322987D /* Array+SoramitsuUI.swift */,
+				7EFBD8D7DC7A13310179F68467CA40EC /* CABasicAnimation+Convenience.swift */,
+				2AF37FFACE0E392F0FF229DA9E35B344 /* DispatchQueue+Gecko.swift */,
+				2D1759E5A5C5BB6483C9902BC3A48308 /* KeyboardEventsListnerHelper.swift */,
+				7A9F783B8F7941C565F3DD3712FA00F9 /* Math.swift */,
+				575CBEDC3EC89FA6A8D148F62F63F0F2 /* ScrollViewContentInsetsHelper.swift */,
+				8B29A9FA65A22F29831D4E6271737815 /* Gestures */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CD67B9392703BE840231A4CB19769E65 /* Observing */ = {
+			isa = PBXGroup;
+			children = (
+				78ECE8F177F74C823BC121F92B8CB9F0 /* ObservableViewController.swift */,
+				A67B2496FB6B7AD119CD2559960223B5 /* ViewControllerObserver.swift */,
+				F027F97F12AECD4CD7A3327E6E897A4E /* ViewObserver.swift */,
+			);
+			name = Observing;
+			path = Observing;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				14E5FB9D951B56DC8AE1BB23421CDA2C /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				33B25DE91B5A7CAB4E6B284D2A2A86D2 /* Products */,
+				F1DB654138439F0244EDE24577F6EE9F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFEF88D1AFB2EF975037C6490F644924 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				F64B5B54FC6CF099E53AB44022869AFF /* SoramitsuLoadingIndicatable.swift */,
+				719DA6E7758135A640DA1F81FF574DA8 /* SoramitsuLoadingPlaceholderDecorator.swift */,
+			);
+			name = Loading;
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D74DCDED122DBB53DCDADEFB95C7A1AC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4ED3D1CDB5A6EAED2D43810AF3600CC6 /* Atom.swift */,
+				821606AC0188E3EDE6CDF816B234106F /* Element.swift */,
+				6FCF40CE0D1BB356686842018794298A /* Molecule.swift */,
+				52CE5E88EF1053743CC05F6A25B14810 /* Organism.swift */,
+				29E90B40AF8C40C357657728720B497E /* SoramitsuConfiguration.swift */,
+			);
+			name = Protocols;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D7ABC96944D38E6DABBAC59679A58218 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31D0E0DCDED84DAF6288D7668F426E31 /* SoramitsuView.swift */,
+				650F325E6900E88CC4DF2FC9DB601687 /* SoramitsuViewConfiguration.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		D97403691DCFF8FDEC86EE8EA5D13A91 /* SoraUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				25C25154C298729A2529207A165DCD85 /* SoraUIKit.h */,
+				292F2C960C8FEF78F70C9735B86C7C06 /* Pod */,
+				E66134B3D78A6017E2A9CC5DD38F1407 /* Sources */,
+				3927B8DCC2B652BAB478BE430465F0B9 /* Support Files */,
+			);
+			name = SoraUIKit;
+			path = ../../SoraUIKit;
+			sourceTree = "<group>";
+		};
+		DD622453A5DD90561FA8E10E0EF013B1 /* ShimmerView */ = {
+			isa = PBXGroup;
+			children = (
+				69AD84BC86CB5F88012DD35021809B98 /* SoramitsuShimmerView.swift */,
+				775D4F9DEFF2A8DB05EC8F6E0EBFD958 /* SoramitsuShimmerViewConfiguration.swift */,
+			);
+			name = ShimmerView;
+			path = ShimmerView;
+			sourceTree = "<group>";
+		};
+		E048E2D7B22B42C6BB6481965667D70E /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				45DA94922B6F2FA759759DA2271E3CFC /* TabBar.swift */,
+			);
+			name = Tabbar;
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		E54DC5360E55250482FA2F99C5B921D3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				06DBC9B70961197FEE5150072188A401 /* DefaultLayout.swift */,
+				6DEC5CB795C6A9D1B54DF38ED72DB762 /* DefaultRadii.swift */,
+				CDBFE1D1799364347F552CE463C2DF10 /* DefaultShady.swift */,
+			);
+			name = Configuration;
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E66134B3D78A6017E2A9CC5DD38F1407 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				48F67A4F27EA8025EBCF0726C66BA5C8 /* Blur */,
+				B7BA443A843FE41C6A0FCCBFC5F566DD /* Codegen */,
+				0D6B5039DF46B3AB127A65977324C9A3 /* Components */,
+				77B6311CB42C74CF9641EAFFAFAB2BE9 /* Core */,
+				9A73D072F92F7901DC84A413AEF3405A /* Scripts */,
+				BF7068859EF9451D610C221B93849031 /* Utils */,
+			);
+			name = Sources;
+			path = SoraUIKit/Sources;
+			sourceTree = "<group>";
+		};
+		E7F2D8F8D7A1B2E1B6DF37B2C8AA9C64 /* Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				6750AD7DAA0B72B05526B0A6F42C6764 /* Shadow.swift */,
+				AAF9B191289F766BC4C1CE7EB164AE89 /* ShadowData.swift */,
+				2C179FD8F72E59CE37E334464D4CBE5B /* Shady.swift */,
+			);
+			name = Shadow;
+			path = Shadow;
+			sourceTree = "<group>";
+		};
+		E8B00D8D0B7C89377B2016EB52436783 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				564C50E3C88C22F6E4674060775AB07E /* SoramitsuBaseButtonConfiguration.swift */,
+				5E7A84D424950EA9E6078A3C3E38325F /* SoramitsuButton.swift */,
+				49EDBFBE9F97FCA272A3C1FDABFE188D /* SoramitsuButtonConfiguration.swift */,
+				5FDFE2D690C49F8DCF9215BB69D59669 /* SoramitsuButtonStyle.swift */,
+				D44B06CA6AF7ABECDA083B5F2AB9576B /* SoramitsuButtonType.swift */,
+			);
+			name = Button;
+			path = Button;
+			sourceTree = "<group>";
+		};
+		EE9E5DA7EB4E71CD6C3A79139538E19A /* ActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				433D44DE0295902D00C9210D9D303DBF /* SoramitsuActivityIndicatorView.swift */,
+				AAB80B9B754E1102F6992BAA81C25F2F /* SoramitsuActivityIndicatorViewConfiguration.swift */,
+			);
+			name = ActivityIndicatorView;
+			path = ActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		F0B0FF143BC3D4F68393B1048E298FFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C13F7EA9CBB4C8F6EFAFC0FA795C29E /* SoramitsuInsets.swift */,
+				AD596A6B33414CCD225719D1DD57E42A /* SoramitsuPosition.swift */,
+				32C9710232F4376C401BE816F1C6603E /* SoramitsuSize.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1DB654138439F0244EDE24577F6EE9F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2970BD5015532AADC1F6252802DC9346 /* Pods-Sample */,
+				267EE823B79F8BE453EC05049539DAE9 /* Pods-Sample-SampleUITests */,
+				96021789B4C7227B137D668D74E057DF /* Pods-SampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FAC49B9718403D999B928EC75C45BE01 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF7BE951BB45BF31D68BE081DD97B24E /* Helpers.swift */,
+				C7710BD21DBC3B3E342726DC5BA63919 /* MainThreadChecker.swift */,
+				4CD4930EFA3245E4A41124EC29F7E94F /* ScreenSizeMapper.swift */,
+				B001D44CE4456449E55B564194B5D2B1 /* Utils.swift */,
+				6A6258376DF515C57C22B3D325B75B13 /* Haptic */,
+				F0B0FF143BC3D4F68393B1048E298FFE /* Models */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FE3AD372A5DB2A8AE217941296914AD7 /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				7E68C1BCDEE99682C63D5B0D98A029EF /* SoramitsuBlurDecorator.swift */,
+				8779B49AEB01CF1CEAC0A371B5F5C053 /* SoramitsuOverlayDecorator.swift */,
+				AAF7D593AA8B792B84448503FD01340E /* SoramitsuStateDecorator.swift */,
+				CFEF88D1AFB2EF975037C6490F644924 /* Loading */,
+				CD67B9392703BE840231A4CB19769E65 /* Observing */,
+			);
+			name = Decorators;
+			path = Decorators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C9B4CFE9684C021259FB6DB3DB00355 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5330E5569DA95E888DE48870AE1602D8 /* Pods-Sample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507B749AC2BC9F1DACC702CC11CE5A28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BD64BCB18CCD2CFFFBCA2F1A43C7B9 /* SoraUIKit.h in Headers */,
+				B871EA00D0410DB02A1F2AC30B47E52D /* SoraUIKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7ADB391B1C441998EF2EABEC9C1181C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749CE23C961F226395BFF83E528C9DF5 /* Pods-SampleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD162729A61E0E1D81B0D53973D92B93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6382F34CF16AAD0B22C3E2A04A1C1FB7 /* Pods-Sample-SampleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D56F5BE8DAFC40C8A6EB6135F33F23F /* Pods-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2649A222F22C03DE2AA702C6B6169C /* Build configuration list for PBXNativeTarget "Pods-Sample" */;
+			buildPhases = (
+				0C9B4CFE9684C021259FB6DB3DB00355 /* Headers */,
+				C7B922E9FD4907A3B4EDD9CDBE3EF307 /* Sources */,
+				2BBD9E13DD60C0D042DCE0688D30711B /* Frameworks */,
+				D331736257F97FDB6CFD65798B65D697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FE647F4C79D5152EB7360D6BA3B1C42 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sample";
+			productName = Pods_Sample;
+			productReference = 46D66FBB724693B89247CC78286D13F4 /* Pods-Sample */;
+			productType = "com.apple.product-type.framework";
+		};
+		A548BC2B32410D9F56252F2A99E3113E /* Pods-SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF5BBD3831A8756D47A9CC50E85287B2 /* Build configuration list for PBXNativeTarget "Pods-SampleTests" */;
+			buildPhases = (
+				C7ADB391B1C441998EF2EABEC9C1181C /* Headers */,
+				D7239AFC7B594803D128EB9025DE3D12 /* Sources */,
+				3C003B699ECC56102DB8F5F2025DCC51 /* Frameworks */,
+				1454392BCB585C47A595BDA05BE1CA56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DC4E1139F0469D66A65B6F535C963EF /* PBXTargetDependency */,
+			);
+			name = "Pods-SampleTests";
+			productName = Pods_SampleTests;
+			productReference = 6E47FA37E158CBAA75A73F58FA113C60 /* Pods-SampleTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		E2B2C87A5B09D845B3477669FC272107 /* Pods-Sample-SampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB37EC6A12BA6E2FFC86206F41F621E3 /* Build configuration list for PBXNativeTarget "Pods-Sample-SampleUITests" */;
+			buildPhases = (
+				DD162729A61E0E1D81B0D53973D92B93 /* Headers */,
+				2A3BAA54C26305BC6000233CF900B4CB /* Sources */,
+				FA66729B17AD28F4D26B61FE2301B459 /* Frameworks */,
+				710C961CCC6A7DDDEDA8B58EAFE464EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E70072CA5758E77307CDFCBCBC302C6D /* PBXTargetDependency */,
+			);
+			name = "Pods-Sample-SampleUITests";
+			productName = Pods_Sample_SampleUITests;
+			productReference = DAD5A1A09A3769841958D5994DF7A28B /* Pods-Sample-SampleUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB4960A825A3934251CB2C86190A2B52 /* SoraUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673778849AD8A95D045AE4FBD944A833 /* Build configuration list for PBXNativeTarget "SoraUIKit" */;
+			buildPhases = (
+				507B749AC2BC9F1DACC702CC11CE5A28 /* Headers */,
+				7338DEB2A88226CA2C33D4DE12D0EA52 /* Sources */,
+				629E52AB6F0DDADB5BAB87CB0DFCB1CF /* Frameworks */,
+				E3E5C6A7D941F7A34AFA1F4D5300609E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoraUIKit;
+			productName = SoraUIKit;
+			productReference = 572EA85744F7CD6D14BDF299F4CCF6CA /* SoraUIKit */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 33B25DE91B5A7CAB4E6B284D2A2A86D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D56F5BE8DAFC40C8A6EB6135F33F23F /* Pods-Sample */,
+				E2B2C87A5B09D845B3477669FC272107 /* Pods-Sample-SampleUITests */,
+				A548BC2B32410D9F56252F2A99E3113E /* Pods-SampleTests */,
+				FB4960A825A3934251CB2C86190A2B52 /* SoraUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1454392BCB585C47A595BDA05BE1CA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		710C961CCC6A7DDDEDA8B58EAFE464EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D331736257F97FDB6CFD65798B65D697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3E5C6A7D941F7A34AFA1F4D5300609E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A3BAA54C26305BC6000233CF900B4CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8511E1B03DF239F8AD7D8CBE8948CA63 /* Pods-Sample-SampleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7338DEB2A88226CA2C33D4DE12D0EA52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB6AF893BC161B2C4F86501989434F /* Array+SoramitsuTableViewSectionProtocol.swift in Sources */,
+				411DCDC55B923BE1F2B05DD89F7DC95D /* Array+SoramitsuUI.swift in Sources */,
+				2A5783E4E90CEA59669C720D35357D8A /* AssetView.swift in Sources */,
+				EDC21CADDFAC1607E66E889F5D1B7FFC /* AssetViewConfiguration.swift in Sources */,
+				F1FF50FD0FFD8815EDB4779A34288D38 /* Atom.swift in Sources */,
+				3ED19174C15880237DD54A7307C3B39F /* BlurViewController.swift in Sources */,
+				4A689714F3303F53AABA1E601D52371F /* CABasicAnimation+Convenience.swift in Sources */,
+				F2A62A923F5946D8A1505CE369F24EE0 /* Colors.swift in Sources */,
+				E837324FCC0E8D7287F6913F6C5F6B1A /* Corner.swift in Sources */,
+				761DFE41EBDC8EBABE5676542BD50467 /* CornerRadius.swift in Sources */,
+				F48887A1CE87FCD41C014360F808CB62 /* CustomVisualEffectView.swift in Sources */,
+				60666AB71D2CEEE440C0E19987CF4643 /* DarkPalette.swift in Sources */,
+				016F597FB2705BFC3850F78CC0A0EF85 /* DarkStatusBarStyle.swift in Sources */,
+				CB3EA83023A9ADAF868D3C8A7F17103D /* DefaultLayout.swift in Sources */,
+				96173DE960FE7CB37A85BBB043198FA2 /* DefaultRadii.swift in Sources */,
+				0172206B67F4246E5DE75A343A0E2B0F /* DefaultShady.swift in Sources */,
+				211138BD65065D62B9AE0F8868A679D3 /* DispatchQueue+Gecko.swift in Sources */,
+				DB113F46D6583FB858014CAFA295DCD0 /* Element.swift in Sources */,
+				89C12015B924A53ED334E4CBD76400C0 /* FontData.swift in Sources */,
+				1920A5F84656DA8E86DA64DF77D6DB52 /* Fonts.swift in Sources */,
+				469A84C8C327FAE5DC88547B6BFCAD2E /* Gap.swift in Sources */,
+				449A0B57F036A60B179E59C1A5DB6A29 /* GElementDescriptor.swift in Sources */,
+				0DFB437D167DA49F494CB7AE38689B72 /* Helpers.swift in Sources */,
+				26B7ED61EED393F4799484339406EBC9 /* HistoryTransactionView.swift in Sources */,
+				95F40D4DA881AD7FB693E7B8AF86C3EF /* HistoryTransactionViewConfiguration.swift in Sources */,
+				98B87F14083289A8B639D877E0B3DAB7 /* ImageButton.swift in Sources */,
+				688C20D8943EA29A031EB287E320E96D /* ImageButtonConfiguration.swift in Sources */,
+				3751021697E561CFBC152F4A6CF5E1C4 /* InputAssetField.swift in Sources */,
+				90F73D5F844202FBE6E9B104620BC251 /* InputAssetFieldConfiguration.swift in Sources */,
+				6228A1FE6638BFEC790EB5CF2C0B9A92 /* InputField.swift in Sources */,
+				1A6C51337B277AE55DF187D7DCAC05C2 /* InputFieldConfiguration.swift in Sources */,
+				D2E2F8B192789804D1395135FF469FF0 /* InputTextView.swift in Sources */,
+				9BFF2D5EE3DC6BD6E6AB2624F123DEAA /* InputTextViewConfiguration.swift in Sources */,
+				53B0025C017DEA3F1A4F301E5AA816F3 /* KeyboardEventsListnerHelper.swift in Sources */,
+				1C683F429778243DDE5B09236847FD6C /* LightPalette.swift in Sources */,
+				87D943A005885001D99B48566863B7CE /* LightStatusBarStyle.swift in Sources */,
+				9E7A9EBCC802A598D5677A92365A61DD /* main.swift in Sources */,
+				48A43F24EF39AE8EC5F4D989A7282CC2 /* MainThreadChecker.swift in Sources */,
+				FA711E163799FACD8970D6C92C2C91F7 /* Margin.swift in Sources */,
+				4F9EA6250A8B654C78DBE4FB03EB76B7 /* Math.swift in Sources */,
+				58A662C958439322A1F44FED046A046C /* Molecule.swift in Sources */,
+				292D5A99C58CBF62A17D46F494226666 /* NSObject+SoramitsuColorable.swift in Sources */,
+				A38A8FD988316EBEBEB8EBAEAC44A24A /* ObservableViewController.swift in Sources */,
+				81CCE9DA6522688DA85B60178DD9BA7F /* ObservationProtocols.swift in Sources */,
+				A4E3D471CAA98C4A7EAE306A96ACF81E /* Organism.swift in Sources */,
+				50CB697449D5359158398DC4C6039D84 /* Padding.swift in Sources */,
+				79AEE4BB67D8DE7A9EFA0DFD45D2875C /* Palette.swift in Sources */,
+				B48647B58A8E6D9FFC0BAE60C56B0500 /* Picture.swift in Sources */,
+				C1279A7A56F9CF501F6591624F612545 /* PoolView.swift in Sources */,
+				9098B4932E2C30D45176695DC87585FD /* PoolViewConfiguration.swift in Sources */,
+				B66EAE97768CC79A64686F4500109B52 /* Radii.swift in Sources */,
+				315E551FBDFC5C253F324BC6253259B4 /* ScreenSizeMapper.swift in Sources */,
+				9CF1D6A6C118F3550639D0BCD4CD05B4 /* ScrollViewContentInsetsHelper.swift in Sources */,
+				1ED82E743D4BCD98AB2DD3D5E2717768 /* Shadow.swift in Sources */,
+				EB3E551BA511F65677FCF48D043B46AB /* ShadowData.swift in Sources */,
+				F0CCEB80C8A6D7E4D9CECE9E5011C640 /* Shady.swift in Sources */,
+				B888E8207646BB955DE2FE1FFCF0529A /* SoramitsuActivityIndicatorView.swift in Sources */,
+				7C67520ABC4D593B1C6A29C467994387 /* SoramitsuActivityIndicatorViewConfiguration.swift in Sources */,
+				5438DD0AF825FB48B88F7D242D12CD13 /* SoramitsuAttributedText.swift in Sources */,
+				459A1E1F9233DC0AA55880365C7D7F28 /* SoramitsuBaseButtonConfiguration.swift in Sources */,
+				584A577FBA24FEACDEFD2B81E06E85EB /* SoramitsuBaseViewController.swift in Sources */,
+				B91865042A1864F8C91F1380B34013E0 /* SoramitsuBlurDecorator.swift in Sources */,
+				28F17C75EB3A61201BF70D968335C98E /* SoramitsuButton.swift in Sources */,
+				F684D3E64273470AD0C7ECF1BB45E3BB /* SoramitsuButtonConfiguration.swift in Sources */,
+				83BED0A4A356926C5AC90FF9DCE8BEDB /* SoramitsuButtonStyle.swift in Sources */,
+				6BC7A88AB501A326EDB65AE7D54BBCA0 /* SoramitsuButtonType.swift in Sources */,
+				2AF3A8B018F8CB6D89837702D33E122D /* SoramitsuCell.swift in Sources */,
+				87839122CB32F8667492217433369F2E /* SoramitsuColor.swift in Sources */,
+				EF5843119317D8B3B39A3BA750E36867 /* SoramitsuConfiguration.swift in Sources */,
+				8C375DB0EF29C331D380880DA9C193EF /* SoramitsuControl.swift in Sources */,
+				A756889DE2C2B78CED6B1C02D540B2E7 /* SoramitsuControlConfiguration.swift in Sources */,
+				E0498C2DD6ADBCB94A380041FD860C84 /* SoramitsuGroupedTableViewDescriptor.swift in Sources */,
+				9096C38D6CDEDE27126818E2A912EF83 /* SoramitsuHaptic.swift in Sources */,
+				72DAC69DD7A024067D5F539035140DCF /* SoramitsuHapticable.swift in Sources */,
+				71E99E59DC786825F809651AB5A37E8E /* SoramitsuHapticType.swift in Sources */,
+				868A05E8E6CB89946D526F2D8B99CE9E /* SoramitsuImageViewConfiguration.swift in Sources */,
+				88B3113C0DB165BA4489E2CC38B462AF /* SoramitsuImageViewImageView.swift in Sources */,
+				DED4E42DEBA0AE705406AD67C637D38F /* SoramitsuInsets.swift in Sources */,
+				6961FDB80B1CED7B29D66D6BC4BE7F97 /* SoramitsuLabel.swift in Sources */,
+				2CB876E59A33AA67CF4BC2423E872C59 /* SoramitsuLabelConfiguration.swift in Sources */,
+				1A2F860989BE5D4E99640C34160D6404 /* SoramitsuLayout.swift in Sources */,
+				75CCF4EE9B4EC0991C72BBE8A3D03830 /* SoramitsuLoadingIndicatable.swift in Sources */,
+				4765F35A003CE452411D612ADF4B27C8 /* SoramitsuLoadingPlaceholderDecorator.swift in Sources */,
+				965262A8345E0B579141F07BF3D1847B /* SoramitsuLoadingTableViewCell.swift in Sources */,
+				3675ECCB5B54DCE52A0D990D1E5C6BBA /* SoramitsuLoadingTableViewItem.swift in Sources */,
+				39B517B19962EEEA2A61C668661876BF /* SoramitsuLoadingTableViewSection.swift in Sources */,
+				91ED828B656FF684285175907BB83713 /* SoramitsuMenuItemAction.swift in Sources */,
+				A6959E26032C2C96735B88816BA12D99 /* SoramitsuOverlayDecorator.swift in Sources */,
+				E325F30F7E7097BB26BBA8A3E5A27805 /* SoramitsuPanGestureRecognizer.swift in Sources */,
+				4F6FB86885E7260BA5D4232BE93465F8 /* SoramitsuPlainTableViewDescriptor.swift in Sources */,
+				B72ED78FBF2BBC46FB44177A4E713794 /* SoramitsuPosition.swift in Sources */,
+				08BD82B5D21491A18D7464CCE28C986F /* SoramitsuScrollView.swift in Sources */,
+				0E58A15AFA9C5AA94FD130353E3EA64A /* SoramitsuScrollViewConfiguration.swift in Sources */,
+				706B486B0AEBD86DD422B1D4495207BF /* SoramitsuScrollViewContext.swift in Sources */,
+				7C123A57DA8B0BE0789DB28C39E33056 /* SoramitsuShimmerView.swift in Sources */,
+				3BD6D8FD22BFC420759E73C693B0C4E4 /* SoramitsuShimmerViewConfiguration.swift in Sources */,
+				0F88C0F5290168CEACF4F7B6EA046E58 /* SoramitsuSize.swift in Sources */,
+				E84EBCA52D0B042489E439ADF9E11168 /* SoramitsuStackView.swift in Sources */,
+				5B88E273E2ABA67BB18CA64404DC7F47 /* SoramitsuStackViewConfiguration.swift in Sources */,
+				66D4244D8FB58CC4FE0C4C7452F9B1A9 /* SoramitsuStateDecorator.swift in Sources */,
+				43DFC4BC21C458A6B319E4D13727753F /* SoramitsuStatusBarManaging.swift in Sources */,
+				78E446AF985E7DDE0DCDDE29C6995D9B /* SoramitsuStyle.swift in Sources */,
+				BE9A042B7F7FF0265EEA015F9324285A /* SoramitsuTableView.swift in Sources */,
+				9A92A49962B132AEA1C2238F89D135E2 /* SoramitsuTableViewBasicPagination.swift in Sources */,
+				F570A150C20186727F54B123533F639D /* SoramitsuTableViewCell.swift in Sources */,
+				3CB97AF6B339C8311217E3534BFB7F57 /* SoramitsuTableViewCellConfiguration.swift in Sources */,
+				DD8EA6BDC94D996B3BB39CB2FD8B09E6 /* SoramitsuTableViewCellProtocol.swift in Sources */,
+				11044929B2CB15E4F7E8019B4159E6E1 /* SoramitsuTableViewConfiguration.swift in Sources */,
+				DF947DC08D5210114924775121333271 /* SoramitsuTableViewFoldableSection.swift in Sources */,
+				4BA780F57D1766A4688301BE9B1273BE /* SoramitsuTableViewItemProtocol.swift in Sources */,
+				4BDB2A5BD4D2DCEE54DD551257D9359F /* SoramitsuTableViewObserver.swift in Sources */,
+				43F4A5AFA3A984934E4FEDB255EEAA34 /* SoramitsuTableViewPaginationHandlerProtocol.swift in Sources */,
+				8BCD4F0D286556647D19E8057FD06596 /* SoramitsuTableViewPaginator.swift in Sources */,
+				401F660C1395D9FCEC44CF7566A6450F /* SoramitsuTableViewSection.swift in Sources */,
+				A3BC3CE0E5FB9C8394E29DD351F35CF5 /* SoramitsuTableViewSectionProtocol.swift in Sources */,
+				A50D4336439F85F79FD417940924F531 /* SoramitsuTableViewSpacerItem.swift in Sources */,
+				E00F11AE760DF695036845F17B349160 /* SoramitsuTableViewSpaceView.swift in Sources */,
+				F5AF90649690B25E87CE854E7C652B60 /* SoramitsuTableViewTitledHeader.swift in Sources */,
+				E5CC3CCFDA60E41A5B3C272ADB0D11E1 /* SoramitsuTableViewTitledHeaderCell.swift in Sources */,
+				2B144B2827F1361640E3FBEDAE17CE68 /* SoramitsuTableViewTopPagination.swift in Sources */,
+				60E1111CF686F88133D319450C70653F /* SoramitsuTableViewType.swift in Sources */,
+				C15F4114D3C702290579905CAD1EF3F2 /* SoramitsuTapGestureRecognizer.swift in Sources */,
+				4C001AA721FDF70CC4D98A1677A28C19 /* SoramitsuTextAttributes.swift in Sources */,
+				BC723F52D2B93F7C578F85D29EFAE797 /* SoramitsuTextField.swift in Sources */,
+				AC333A66A2723EB4E12B32FDBA25795B /* SoramitsuTextFieldConfiguration.swift in Sources */,
+				CF5DBE018C05BAD53C209BEBDB541B0B /* SoramitsuTextItem.swift in Sources */,
+				F29B33268D3F97EB76F62EFA5E81783C /* SoramitsuTextView.swift in Sources */,
+				ED8BBE996A9059E3C9BEE1BBA582A690 /* SoramitsuTextViewConfiguration.swift in Sources */,
+				96335388CE8F8128CD2A7ECCE815CFC2 /* SoramitsuThemeType.swift in Sources */,
+				DE17B926BA2B713BA2B440F588D388B5 /* SoramitsuUI.swift in Sources */,
+				AF3AC5E34C3E2F56B9EE4BED3130004F /* SoramitsuView.swift in Sources */,
+				363CE7171F67602990035A890CAA676A /* SoramitsuViewConfiguration.swift in Sources */,
+				3F51358E306A938847FE92970C550E2B /* SoramitsuViewController.swift in Sources */,
+				5714B06F815689E2017809761D0D5496 /* SoramitsuViewControllerConfiguration.swift in Sources */,
+				1F5C3FB00DE0EA8E17247E1B10777037 /* SoraUIKit-dummy.m in Sources */,
+				591DE602806C715BDDC5ED3EF85EE7DA /* States.swift in Sources */,
+				D5085A70A7FD8A1E80C7FFAF2064CABD /* StatusBarStyle.swift in Sources */,
+				1C85A475C356B3AE9C631C88DA9339E6 /* TabBar.swift in Sources */,
+				8AB56B2347FA4628D8356BF5CF731D85 /* ThemeManager.swift in Sources */,
+				7F4A4F5D269DD2DB8E7851A599F601AD /* ThemeStorage.swift in Sources */,
+				97CFDBC0B0B13B60469EB4B47F68A02F /* UpdateOptions.swift in Sources */,
+				C3D3D18B4CB8D588F007813B0A156385 /* Utils.swift in Sources */,
+				ECDE4D4D97AB6971DC7485DB377D7434 /* ViewControllerObserver.swift in Sources */,
+				87D4B5D57932788FBA3A19B9E7985955 /* ViewObserver.swift in Sources */,
+				8DC217C3D31D3580DD09FEDD22A3244E /* WalletViewMode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B922E9FD4907A3B4EDD9CDBE3EF307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493A41AF78ED84A0D7F3161ED9E38192 /* Pods-Sample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7239AFC7B594803D128EB9025DE3D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D943B993F2E4AC5172A5C20D399862D8 /* Pods-SampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FE647F4C79D5152EB7360D6BA3B1C42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SoraUIKit;
+			target = FB4960A825A3934251CB2C86190A2B52 /* SoraUIKit */;
+			targetProxy = 2CC66098762BFFAEC76B2670BB15E07E /* PBXContainerItemProxy */;
+		};
+		9DC4E1139F0469D66A65B6F535C963EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Sample";
+			target = 3D56F5BE8DAFC40C8A6EB6135F33F23F /* Pods-Sample */;
+			targetProxy = 6FAB956F5BD5D473E1D10E4719F71ABB /* PBXContainerItemProxy */;
+		};
+		E70072CA5758E77307CDFCBCBC302C6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SoraUIKit;
+			target = FB4960A825A3934251CB2C86190A2B52 /* SoraUIKit */;
+			targetProxy = 7630F9692690A51A469E735A22920BD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		149A2BA118EBEB852B949FD176DE26EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0B9464CBE009C1C4E75676D6C90F95 /* SoraUIKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SoraUIKit/SoraUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SoraUIKit/SoraUIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SoraUIKit/SoraUIKit.modulemap";
+				PRODUCT_MODULE_NAME = SoraUIKit;
+				PRODUCT_NAME = SoraUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		560B1C02ADC3C336F9B8486CAAC3FD3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9525524510EF81B34C60B2783EEC30E /* Pods-Sample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sample/Pods-Sample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sample/Pods-Sample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E3CDB8A947811CC165FCEA7F6099A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB049F42B1E2BA8DABC01A84F4B7E8E /* SoraUIKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SoraUIKit/SoraUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SoraUIKit/SoraUIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SoraUIKit/SoraUIKit.modulemap";
+				PRODUCT_MODULE_NAME = SoraUIKit;
+				PRODUCT_NAME = SoraUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B9D8C4B268C939A1A7D0E13177D936E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE5E7B7E7BBC40FBBF60073581D1D87 /* Pods-SampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SampleTests/Pods-SampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SampleTests/Pods-SampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCD6DF8EFB5695E2B3465DFB6ED26951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ECB9AF8FC549F42E47A322E1F5146F7 /* Pods-Sample-SampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sample-SampleUITests/Pods-Sample-SampleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sample-SampleUITests/Pods-Sample-SampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C16800912EE155F95B797F570B376CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22D2BA78DEA4F27D119C526754B1810 /* Pods-Sample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sample/Pods-Sample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sample/Pods-Sample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C634984F8208134218E9B9E62AB06FD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51EFCDDE8722FDAA3B7531933CA2BF4B /* Pods-SampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SampleTests/Pods-SampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SampleTests/Pods-SampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFD0A340F01F71ACC8438575A67E09B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9EFB96F8FC819B8BCD85E5487C121D /* Pods-Sample-SampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sample-SampleUITests/Pods-Sample-SampleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sample-SampleUITests/Pods-Sample-SampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		673778849AD8A95D045AE4FBD944A833 /* Build configuration list for PBXNativeTarget "SoraUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E3CDB8A947811CC165FCEA7F6099A56 /* Debug */,
+				149A2BA118EBEB852B949FD176DE26EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF5BBD3831A8756D47A9CC50E85287B2 /* Build configuration list for PBXNativeTarget "Pods-SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D8C4B268C939A1A7D0E13177D936E2 /* Debug */,
+				C634984F8208134218E9B9E62AB06FD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB37EC6A12BA6E2FFC86206F41F621E3 /* Build configuration list for PBXNativeTarget "Pods-Sample-SampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD6DF8EFB5695E2B3465DFB6ED26951 /* Debug */,
+				EFD0A340F01F71ACC8438575A67E09B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2649A222F22C03DE2AA702C6B6169C /* Build configuration list for PBXNativeTarget "Pods-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C16800912EE155F95B797F570B376CA1 /* Debug */,
+				560B1C02ADC3C336F9B8486CAAC3FD3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

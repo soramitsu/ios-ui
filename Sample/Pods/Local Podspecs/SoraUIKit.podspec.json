@@ -1,0 +1,23 @@
+{
+  "name": "SoraUIKit",
+  "version": "0.0.1",
+  "summary": "A short description of SoraUIKit.",
+  "description": "Soramitsu Swift UI framework",
+  "homepage": "http://EXAMPLE/SoraUIKit",
+  "license": "MIT",
+  "authors": "Ivan Shlyapkin",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "https://github.com/soramitsu/ios-ui.git",
+    "tag": "0.0.2"
+  },
+  "source_files": [
+    "SoraUIKit",
+    "SoraUIKit/**/*.{h,m,swift}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "swift_version": "5.0"
+}

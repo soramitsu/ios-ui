@@ -1,0 +1,16 @@
+PODS:
+  - SoraUIKit (0.0.1)
+
+DEPENDENCIES:
+  - SoraUIKit (from `../SoraUIKit`)
+
+EXTERNAL SOURCES:
+  SoraUIKit:
+    :path: "../SoraUIKit"
+
+SPEC CHECKSUMS:
+  SoraUIKit: e1066d4e540c2e77bd5a02a25aa98a42d0cbfdff
+
+PODFILE CHECKSUM: af82a2f18c337e609d4c82557b40840ffdd9d48b
+
+COCOAPODS: 1.11.3
