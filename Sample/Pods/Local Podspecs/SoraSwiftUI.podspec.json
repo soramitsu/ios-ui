@@ -1,0 +1,24 @@
+{
+  "name": "SoraSwiftUI",
+  "version": "0.0.1",
+  "summary": "A short description of SoraSwiftUI.",
+  "resources": "SoraSwiftUI/Fonts/*.otf",
+  "description": "Soramitsu Swift UI framework",
+  "homepage": "http://EXAMPLE/SoraSwiftUI",
+  "license": "MIT",
+  "authors": {
+    "Ivan Shlyapkin": "shlyapkin01@gmail.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source": {
+    "git": "https://github.com/soramitsu/ios-ui.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "SoraSwiftUI",
+    "SoraSwiftUI/**/*.{h,m,swift}"
+  ],
+  "exclude_files": "Classes/Exclude"
+}

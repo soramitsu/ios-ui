@@ -1,0 +1,6 @@
+framework module SoraUIKit {
+  umbrella header "SoraUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
