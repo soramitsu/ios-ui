@@ -9,6 +9,13 @@ public final class SoramitsuScrollView: UIScrollView, Atom {
 		super.init(frame: .zero)
         sora.owner = self
 	}
+    
+    public override func touchesShouldCancel(in view: UIView) -> Bool {
+        if sora.cancelsTouchesOnDragging && view is UIControl {
+            return true
+        }
+        return super.touchesShouldCancel(in: view)
+    }
 
 	@available(*, unavailable)
 	required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }

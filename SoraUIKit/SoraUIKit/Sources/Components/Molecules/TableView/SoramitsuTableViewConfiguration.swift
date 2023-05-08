@@ -86,8 +86,6 @@ public class SoramitsuTableViewConfiguration<Type: SoramitsuTableView, SectionIt
 		}
 	}
 
-	public var cancelsTouchesOnDragging: Bool = false
-
 	public var showPaginationLoaderAfterReset: Bool = false
     private var resetPaginationInProgress: Bool = false
 

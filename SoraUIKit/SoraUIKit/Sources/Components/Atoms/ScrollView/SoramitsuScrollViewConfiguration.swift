@@ -31,6 +31,8 @@ public class SoramitsuScrollViewConfiguration<Type: UIScrollView & Element>: Sor
 			owner?.keyboardDismissMode = keyboardDismissMode
 		}
 	}
+    
+    public var cancelsTouchesOnDragging: Bool = false
 
 	override func configureOwner() {
 		super.configureOwner()
