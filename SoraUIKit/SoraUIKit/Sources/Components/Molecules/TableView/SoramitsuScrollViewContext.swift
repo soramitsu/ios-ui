@@ -1,7 +1,7 @@
 import UIKit
 
 public typealias SoramitsuTableViewContext = SoramitsuScrollViewContext<SoramitsuTableView>
-
+public typealias DiffableTableViewContext = SoramitsuScrollViewContext<DiffableTableView>
 //public typealias SoramitsuCollectionViewContext = SoramitsuScrollViewContext<SoramitsuCollectionView>
 
 public class SoramitsuScrollViewContext<ScrollView: UIScrollView & Molecule> {

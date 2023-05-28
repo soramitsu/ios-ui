@@ -37,6 +37,8 @@ open class SoramitsuTableViewSection: SoramitsuTableViewSectionProtocol {
 			context?.scrollView?.reloadSections(IndexSet(integer: index), with: .fade)
 		}
 	}
+    
+    public var footer: UIView?
 
 	public var context: SoramitsuTableViewContext?
 

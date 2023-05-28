@@ -219,13 +219,6 @@ public class SoramitsuTableViewConfiguration<Type: SoramitsuTableView, SectionIt
 	}
 }
 
-private extension SoramitsuTableViewItemProtocol {
-
-	func reuseId() -> String {
-		return String(describing: cellType)
-	}
-}
-
 extension SoramitsuTableViewConfiguration: SoramitsuTableViewPaginatorDelegate {
 
 	func reloadEmptyView() {

@@ -24,3 +24,10 @@ extension SoramitsuTableViewSpaceView: SoramitsuTableViewCellProtocol {
 		spaceCellBackgroundView.sora.backgroundColor = item.backgroundColor
 	}
 }
+
+//extension SoramitsuTableViewSpaceView: DiffableTableViewCellProtocol {
+//    func set(item: DiffableTableViewItemProtocol, context: DiffableTableViewContext?) {
+//        guard let item = item as? SoramitsuTableViewSpacerItem else { return }
+//        spaceCellBackgroundView.sora.backgroundColor = item.backgroundColor
+//    }
+//}

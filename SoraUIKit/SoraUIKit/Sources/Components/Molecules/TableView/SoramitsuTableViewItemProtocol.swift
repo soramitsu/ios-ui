@@ -1,6 +1,6 @@
 import UIKit
 
-public protocol SoramitsuTableViewItemProtocol: NSObject {
+public protocol SoramitsuTableViewItemProtocol: BaseTableViewItemProtocol {
 
 	var cellType: AnyClass { get }
 
@@ -142,4 +142,12 @@ public extension SoramitsuTableViewItemProtocol {
 	func itemEstimatedHeight(forWidth width: CGFloat) -> CGFloat? {
 		nil
 	}
+}
+
+extension SoramitsuTableViewItemProtocol {
+
+    func reuseId() -> String {
+        return String(describing: cellType)
+    }
+    
 }

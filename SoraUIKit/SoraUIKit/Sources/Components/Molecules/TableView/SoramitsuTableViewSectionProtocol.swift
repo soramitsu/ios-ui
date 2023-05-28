@@ -1,6 +1,6 @@
 import UIKit
 
-public protocol SoramitsuTableViewSectionProtocol: AnyObject {
+public protocol SoramitsuTableViewSectionProtocol: BaseTableViewSectionProtocol {
 
 	var header: SoramitsuTableViewItemProtocol? { get set }
 

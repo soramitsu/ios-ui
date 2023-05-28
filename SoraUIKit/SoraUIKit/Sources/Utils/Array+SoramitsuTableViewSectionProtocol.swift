@@ -17,3 +17,23 @@ extension Array where Element == SoramitsuTableViewSectionProtocol {
 		return self[indexPath.section].rows[indexPath.row]
 	}
 }
+
+extension Array where Element == DiffableTableViewSectionProtocol {
+
+    func indexPath(of item: DiffableTableViewItemProtocol) -> IndexPath? {
+        for pair in enumerated() {
+            guard let index = pair.element.rows.firstIndex(where: { row in row.isEqual(item) }) else {
+                continue
+            }
+            return IndexPath(row: index, section: pair.offset)
+        }
+        return nil
+    }
+
+    func item(for indexPath: IndexPath) -> DiffableTableViewItemProtocol? {
+        guard indexPath.section < count, indexPath.row < self[indexPath.section].rows.count else {
+            return nil
+        }
+        return self[indexPath.section].rows[indexPath.row]
+    }
+}
