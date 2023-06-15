@@ -1,10 +1,10 @@
 import UIKit
 
-final class SoramitsuTableViewSpaceView: SoramitsuView {
+public final class SoramitsuTableViewSpaceView: SoramitsuView {
 
 	private var spaceCellBackgroundView: SoramitsuView
 
-	override func layoutSubviews() {
+    public override func layoutSubviews() {
 		super.layoutSubviews()
 		accessibilityElementsHidden = true
 		backgroundColor = .clear
@@ -19,7 +19,7 @@ final class SoramitsuTableViewSpaceView: SoramitsuView {
 }
 
 extension SoramitsuTableViewSpaceView: SoramitsuTableViewCellProtocol {
-	func set(item: SoramitsuTableViewItemProtocol, context: SoramitsuTableViewContext?) {
+    public func set(item: SoramitsuTableViewItemProtocol, context: SoramitsuTableViewContext?) {
 		guard let item = item as? SoramitsuTableViewSpacerItem else { return }
 		spaceCellBackgroundView.sora.backgroundColor = item.backgroundColor
 	}
