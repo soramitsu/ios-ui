@@ -4,8 +4,16 @@ open class BlurViewController: UIViewController {
     public var isClosable: Bool = true {
         didSet {
             panGestureRecognizer?.isEnabled = isClosable
+            sliderLayer.isHidden = !isClosable
         }
     }
+    
+    let sliderLayer: CALayer = {
+        let layer = CALayer()
+        layer.cornerRadius = 2
+        layer.backgroundColor = SoramitsuUI.shared.theme.palette.color(.fgTertiary).cgColor
+        return layer
+    }()
     
     public var backgroundColor: SoramitsuColor = .custom(uiColor: .clear)
     public var completionHandler: (() -> Void)?
@@ -29,7 +37,7 @@ open class BlurViewController: UIViewController {
         view.backgroundColor = .clear
         setupView()
     }
-    
+
     public init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -41,6 +49,14 @@ open class BlurViewController: UIViewController {
     func setupView() {
         view.backgroundColor = SoramitsuUI.shared.theme.palette.color(backgroundColor)
         view.addSubview(blurredView)
+        
+        view.layer.addSublayer(sliderLayer)
+        
+        let xPosition = (UIScreen.main.bounds.width / 2) - 16
+        let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let yPosition = scene?.windows.first?.safeAreaInsets.top ?? .zero
+        sliderLayer.frame = CGRect(x: xPosition, y: yPosition, width: 32, height: 4)
+        
         view.sendSubviewToBack(blurredView)
 
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureAction(_:)))
