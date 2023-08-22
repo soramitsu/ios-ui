@@ -51,9 +51,9 @@ public final class HistoryTransactionViewConfiguration<Type: HistoryTransactionV
         }
     }
 
-    public var upAmountText: NSAttributedString? {
+    public var upAmountText: SoramitsuAttributedText? {
         didSet {
-            owner?.amountUpLabel.sora.attributedText = upAmountText?.attributedString
+            owner?.amountUpLabel.sora.attributedText = upAmountText
         }
     }
     

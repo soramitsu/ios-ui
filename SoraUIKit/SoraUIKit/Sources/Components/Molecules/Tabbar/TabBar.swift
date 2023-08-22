@@ -17,8 +17,8 @@ public class TabBar: UITabBar {
         return label
     }()
     
-    public lazy var coverButton: SoramitsuButton = {
-        let button = SoramitsuButton()
+    public lazy var coverButton: SoramitsuControl = {
+        let button = SoramitsuControl()
         button.sora.backgroundColor = .custom(uiColor: .clear)
         return button
     }()
@@ -52,19 +52,21 @@ public class TabBar: UITabBar {
             middleButtonTitleLabel.widthAnchor.constraint(equalToConstant: titleWidth),
             middleButtonTitleLabel.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -1),
         ])
+        
+        SoramitsuUI.updates.addObserver(self)
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private var shapeLayer: CALayer?
+    private var shapeLayer: CAShapeLayer?
 
     private func addShape() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
         shapeLayer.strokeColor = UIColor.clear.cgColor
-        shapeLayer.fillColor = Colors.white100.cgColor
+        shapeLayer.fillColor = SoramitsuUI.shared.theme.palette.color(.bgSurface).cgColor
         shapeLayer.lineWidth = 0
 
         if let oldShapeLayer = self.shapeLayer {
@@ -112,6 +114,13 @@ public class TabBar: UITabBar {
             return result
         }
         return nil
+    }
+}
+
+extension TabBar: SoramitsuObserver {
+    public func styleDidChange(options: UpdateOptions) {
+        guard let shapeLayer = shapeLayer else { return }
+        shapeLayer.fillColor = SoramitsuUI.shared.theme.palette.color(.bgSurface).cgColor
     }
 }
 
