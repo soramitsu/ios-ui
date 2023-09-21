@@ -122,7 +122,7 @@ public final class PoolView: UIControl, Molecule {
         return label
     }()
     
-    let amountDownLabel: SoramitsuLabel = {
+    public let amountDownLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textBoldXS
         label.sora.textColor = .statusSuccess
