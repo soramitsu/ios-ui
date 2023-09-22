@@ -4,6 +4,11 @@ import UIKit
 public final class PoolView: UIControl, Molecule {
     
     public let sora: PoolViewConfiguration<PoolView>
+    public var isRightToLeft: Bool = false {
+        didSet {
+            setupSemantics()
+        }
+    }
     
     // MARK: - UI
     
@@ -122,6 +127,12 @@ public final class PoolView: UIControl, Molecule {
         return label
     }()
     
+    public let amountDownView: SoramitsuView = {
+        let view = SoramitsuView()
+        view.sora.backgroundColor = .custom(uiColor: .clear)
+        return view
+    }()
+    
     public let amountDownLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textBoldXS
@@ -161,7 +172,9 @@ private extension PoolView {
         infoStackView.addArrangedSubview(subtitleLabel)
         
         amountStackView.addArrangedSubview(amountUpLabel)
-        amountStackView.addArrangedSubview(amountDownLabel)
+        amountStackView.addArrangedSubview(amountDownView)
+        
+        amountDownView.addSubview(amountDownLabel)
         
         stackView.addArrangedSubview(favoriteButton)
         stackView.setCustomSpacing(16, after: favoriteButton)
@@ -187,8 +200,19 @@ private extension PoolView {
             rewardImageView.bottomAnchor.constraint(equalTo: secondCurrencyImageView.bottomAnchor),
 
             rewardViewContainter.centerXAnchor.constraint(equalTo: rewardImageView.centerXAnchor),
-            rewardViewContainter.centerYAnchor.constraint(equalTo: rewardImageView.centerYAnchor)
+            rewardViewContainter.centerYAnchor.constraint(equalTo: rewardImageView.centerYAnchor),
+            
+            amountDownLabel.trailingAnchor.constraint(equalTo: amountDownView.trailingAnchor)
         ])
+    }
+    
+    private func setupSemantics() {
+        let alignment: NSTextAlignment = isRightToLeft ? .right : .left
+        let reversedAlignment: NSTextAlignment = isRightToLeft ? .left : .right
+        titleLabel.sora.alignment = alignment
+        subtitleLabel.sora.alignment = alignment
+        amountUpLabel.sora.alignment = reversedAlignment
+        amountDownLabel.sora.alignment = reversedAlignment
     }
 }
 
