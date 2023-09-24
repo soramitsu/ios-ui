@@ -4,6 +4,11 @@ import UIKit
 public final class HistoryTransactionView: UIControl, Molecule {
 
     public let sora: HistoryTransactionViewConfiguration<HistoryTransactionView>
+    public var isRightToLeft: Bool = false {
+        didSet {
+            setupSemantics()
+        }
+    }
 
     // MARK: - UI
 
@@ -188,6 +193,12 @@ private extension HistoryTransactionView {
             
             amountUpLabel.trailingAnchor.constraint(equalTo: statusImageView.leadingAnchor, constant: -4),
         ])
+    }
+    
+    private func setupSemantics() {
+        let alignment: NSTextAlignment = isRightToLeft ? .right : .left
+        titleLabel.sora.alignment = alignment
+        subtitleLabel.sora.alignment = alignment
     }
 }
 
