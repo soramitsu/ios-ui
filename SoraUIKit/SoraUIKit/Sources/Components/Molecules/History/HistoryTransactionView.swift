@@ -4,26 +4,31 @@ import UIKit
 public final class HistoryTransactionView: UIControl, Molecule {
 
     public let sora: HistoryTransactionViewConfiguration<HistoryTransactionView>
+    public var isRightToLeft: Bool = false {
+        didSet {
+            setupSemantics()
+        }
+    }
 
     // MARK: - UI
 
     var firstCurrencyHeightContstaint: NSLayoutConstraint?
     
-    let currenciesView: SoramitsuView = {
+    public let currenciesView: SoramitsuView = {
         let view = SoramitsuView()
         view.heightAnchor.constraint(equalToConstant: 40).isActive = true
         view.widthAnchor.constraint(equalToConstant: 40).isActive = true
         return view
     }()
 
-    let firstCurrencyImageView: UIImageView = {
+    public let firstCurrencyImageView: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.widthAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         return view
     }()
 
-    let secondCurrencyImageView: UIImageView = {
+    public let secondCurrencyImageView: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 28).isActive = true
@@ -32,7 +37,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         return view
     }()
     
-    let oneCurrencyImageView: UIImageView = {
+    public let oneCurrencyImageView: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 32).isActive = true
@@ -40,7 +45,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         return view
     }()
     
-    let transactionTypeView: SoramitsuView = {
+    public let transactionTypeView: SoramitsuView = {
         let view = SoramitsuView()
         view.sora.backgroundColor = .bgSurface
         view.sora.shadow = .small
@@ -52,7 +57,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         return view
     }()
     
-    let transactionTypeImageView: SoramitsuImageView = {
+    public let transactionTypeImageView: SoramitsuImageView = {
         let view = SoramitsuImageView()
         view.sora.backgroundColor = .bgSurface
         view.sora.shadow = .small
@@ -63,7 +68,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         return view
     }()
 
-    let titleLabel: SoramitsuLabel = {
+    public let titleLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textM
         label.sora.textColor = .fgPrimary
@@ -71,7 +76,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         return label
     }()
 
-    let subtitleLabel: SoramitsuLabel = {
+    public let subtitleLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textBoldXS
         label.sora.textColor = .fgSecondary
@@ -86,7 +91,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         return view
     }()
 
-    let amountUpLabel: SoramitsuLabel = {
+    public let amountUpLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textM
         label.sora.textColor = .fgPrimary
@@ -95,7 +100,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         return label
     }()
     
-    let statusImageView: SoramitsuImageView = {
+    public let statusImageView: SoramitsuImageView = {
         let view = SoramitsuImageView()
         view.sora.isHidden = true
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -103,8 +108,14 @@ public final class HistoryTransactionView: UIControl, Molecule {
         view.widthAnchor.constraint(equalToConstant: 16).isActive = true
         return view
     }()
+    
+    public let amountView: SoramitsuView = {
+        let view = SoramitsuView()
+        view.sora.backgroundColor = .custom(uiColor: .clear)
+        return view
+    }()
 
-    let fiatLabel: SoramitsuLabel = {
+    public let fiatLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textBoldXS
         label.sora.textColor = .fgSecondary
@@ -132,7 +143,8 @@ private extension HistoryTransactionView {
         isUserInteractionEnabled = false
         translatesAutoresizingMaskIntoConstraints = false
 
-        amountStackView.addArrangedSubviews(amountUpLabel, statusImageView)
+        amountStackView.addArrangedSubviews(amountView)
+        amountView.addSubviews([amountUpLabel, statusImageView])
         addSubviews(currenciesView, titleLabel, subtitleLabel, amountStackView)
         
         transactionTypeView.addSubview(transactionTypeImageView)
@@ -175,7 +187,18 @@ private extension HistoryTransactionView {
             amountStackView.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: 8),
             amountStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             amountStackView.topAnchor.constraint(equalTo: titleLabel.topAnchor),
+            amountStackView.bottomAnchor.constraint(equalTo: subtitleLabel.topAnchor),
+            
+            statusImageView.trailingAnchor.constraint(equalTo: amountView.trailingAnchor),
+            
+            amountUpLabel.trailingAnchor.constraint(equalTo: statusImageView.leadingAnchor, constant: -4),
         ])
+    }
+    
+    private func setupSemantics() {
+        let alignment: NSTextAlignment = isRightToLeft ? .right : .left
+        titleLabel.sora.alignment = alignment
+        subtitleLabel.sora.alignment = alignment
     }
 }
 

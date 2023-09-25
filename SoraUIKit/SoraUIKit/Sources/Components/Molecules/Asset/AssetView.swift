@@ -4,6 +4,11 @@ import UIKit
 public final class AssetView: UIView, Molecule {
     
     public let sora: AssetViewConfiguration<AssetView>
+    public var isRightToLeft: Bool = false {
+        didSet {
+            setupSemantics()
+        }
+    }
     
     // MARK: - UI
     
@@ -78,6 +83,12 @@ public final class AssetView: UIView, Molecule {
         return label
     }()
     
+    public let amountDownView: SoramitsuView = {
+        let view = SoramitsuView()
+        view.sora.backgroundColor = .custom(uiColor: .clear)
+        return view
+    }()
+    
     public let amountDownLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textBoldXS
@@ -135,7 +146,9 @@ private extension AssetView {
         infoStackView.addArrangedSubview(subtitleLabel)
         
         amountStackView.addArrangedSubview(amountUpLabel)
-        amountStackView.addArrangedSubview(amountDownLabel)
+        amountStackView.addArrangedSubview(amountDownView)
+        
+        amountDownView.addSubview(amountDownLabel)
         
         actionsStackView.addArrangedSubview(dragDropImageView)
         
@@ -159,7 +172,18 @@ private extension AssetView {
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
             stackView.heightAnchor.constraint(equalToConstant: 40),
+            
+            amountDownLabel.trailingAnchor.constraint(equalTo: amountDownView.trailingAnchor)
         ])
+    }
+    
+    private func setupSemantics() {
+        let alignment: NSTextAlignment = isRightToLeft ? .right : .left
+        let reversedAlignment: NSTextAlignment = isRightToLeft ? .left : .right
+        titleLabel.sora.alignment = alignment
+        subtitleLabel.sora.alignment = alignment
+        amountUpLabel.sora.alignment = reversedAlignment
+        amountDownLabel.sora.alignment = reversedAlignment
     }
 }
 
