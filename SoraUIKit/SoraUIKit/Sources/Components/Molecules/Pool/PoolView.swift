@@ -35,21 +35,25 @@ public final class PoolView: UIControl, Molecule {
         return view
     }()
     
-    let firstCurrencyImageView: UIImageView = {
-        let view = UIImageView()
+    public let firstCurrencyImageView: SoramitsuImageView = {
+        let view = SoramitsuImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 40).isActive = true
         view.widthAnchor.constraint(equalToConstant: 40).isActive = true
         view.isUserInteractionEnabled = false
+        view.sora.loadingPlaceholder.type = .shimmer
+        view.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         return view
     }()
     
-    let secondCurrencyImageView: UIImageView = {
-        let view = UIImageView()
+    public let secondCurrencyImageView: SoramitsuImageView = {
+        let view = SoramitsuImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 40).isActive = true
         view.widthAnchor.constraint(equalToConstant: 40).isActive = true
         view.isUserInteractionEnabled = false
+        view.sora.loadingPlaceholder.type = .shimmer
+        view.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         return view
     }()
     
@@ -64,7 +68,7 @@ public final class PoolView: UIControl, Molecule {
         return view
     }()
     
-    let rewardImageView: SoramitsuImageView = {
+    public let rewardImageView: SoramitsuImageView = {
         let view = SoramitsuImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 18).isActive = true
@@ -73,6 +77,8 @@ public final class PoolView: UIControl, Molecule {
         view.sora.borderColor = .bgPage
         view.sora.isUserInteractionEnabled = false
         view.sora.backgroundColor = .additionalPolkaswap
+        view.sora.loadingPlaceholder.type = .shimmer
+        view.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         return view
     }()
     
@@ -86,15 +92,17 @@ public final class PoolView: UIControl, Molecule {
         return stackView
     }()
     
-    let titleLabel: SoramitsuLabel = {
+    public let titleLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textM
         label.sora.textColor = .fgPrimary
         label.sora.isUserInteractionEnabled = false
+        label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .small
         return label
     }()
     
-    let subtitleLabel: SoramitsuLabel = {
+    public let subtitleLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textBoldXS
         label.sora.textColor = .fgSecondary
@@ -102,6 +110,8 @@ public final class PoolView: UIControl, Molecule {
         label.sora.isUserInteractionEnabled = false
         label.setContentHuggingPriority(.required, for: .horizontal)
         label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .small
         return label
     }()
     
@@ -117,13 +127,15 @@ public final class PoolView: UIControl, Molecule {
         return stackView
     }()
     
-    let amountUpLabel: SoramitsuLabel = {
+    public let amountUpLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textM
         label.sora.textColor = .fgPrimary
         label.sora.alignment = .right
         label.setContentHuggingPriority(.defaultLow, for: .horizontal)
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
+        label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .small
         return label
     }()
     

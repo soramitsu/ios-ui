@@ -27,12 +27,14 @@ public final class AssetView: UIView, Molecule {
         return view
     }()
     
-    public let assetImageView: UIImageView = {
-        let view = UIImageView()
+    public let assetImageView: SoramitsuImageView = {
+        let view = SoramitsuImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 40).isActive = true
         view.widthAnchor.constraint(equalToConstant: 40).isActive = true
         view.isUserInteractionEnabled = false
+        view.sora.loadingPlaceholder.type = .shimmer
+        view.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         return view
     }()
     
@@ -51,6 +53,8 @@ public final class AssetView: UIView, Molecule {
         label.sora.font = FontType.textM
         label.sora.textColor = .fgPrimary
         label.sora.isUserInteractionEnabled = false
+        label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .small
         return label
     }()
     
@@ -60,6 +64,8 @@ public final class AssetView: UIView, Molecule {
         label.sora.textColor = .fgSecondary
         label.sora.isHidden = true
         label.sora.isUserInteractionEnabled = false
+        label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .small
         return label
     }()
     
@@ -80,6 +86,8 @@ public final class AssetView: UIView, Molecule {
         label.sora.textColor = .fgPrimary
         label.sora.alignment = .right
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
+        label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .small
         return label
     }()
     
@@ -96,6 +104,8 @@ public final class AssetView: UIView, Molecule {
         label.sora.alignment = .right
         label.sora.text = " "
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
+        label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .small
         return label
     }()
     
