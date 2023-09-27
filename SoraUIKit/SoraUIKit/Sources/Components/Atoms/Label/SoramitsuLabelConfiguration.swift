@@ -41,6 +41,12 @@ public class SoramitsuLabelConfiguration<Type: UILabel & Atom>: SoramitsuViewCon
 			updateAttributedText()
 		}
 	}
+    
+    public var supportsPaletteMode: Bool = true {
+            didSet {
+                updateAttributedText()
+            }
+    }
 
 	// MARK: Other
 
@@ -65,7 +71,7 @@ public class SoramitsuLabelConfiguration<Type: UILabel & Atom>: SoramitsuViewCon
 	public override func styleDidChange(options: UpdateOptions) {
 		super.styleDidChange(options: options)
 
-		if options.contains(.palette) {
+		if options.contains(.palette) && supportsPaletteMode {
 			updateAttributedText()
 		}
 	}
@@ -87,7 +93,7 @@ public class SoramitsuLabelConfiguration<Type: UILabel & Atom>: SoramitsuViewCon
 		paragraph.lineBreakMode = lineBreakMode
 
 		attributes[.paragraphStyle] = paragraph
-		attributes[.foregroundColor] = style.palette.color(textColor)
+        attributes[.foregroundColor] = supportsPaletteMode ? style.palette.color(textColor) : LightPalette().color(textColor)
 		if let underlineStyle = underlineStyle {
 			attributes[.underlineStyle] = underlineStyle.rawValue
 		}
