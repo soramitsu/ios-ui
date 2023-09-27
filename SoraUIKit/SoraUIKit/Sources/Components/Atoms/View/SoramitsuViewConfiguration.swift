@@ -101,6 +101,8 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
         }
     }
     
+    public var supportsPaletteMode: Bool = true
+    
     private(set) lazy var overlay = SoramitsuOverlayDecorator(style: style)
     
     private lazy var blurDecorator = SoramitsuBlurDecorator()
@@ -140,7 +142,7 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
     public override func styleDidChange(options: UpdateOptions) {
         super.styleDidChange(options: options)
         
-        if options.contains(.palette) {
+        if options.contains(.palette) && supportsPaletteMode {
             retrigger(self, \.backgroundColor)
             retrigger(self, \.tintColor)
             retrigger(self, \.borderColor)

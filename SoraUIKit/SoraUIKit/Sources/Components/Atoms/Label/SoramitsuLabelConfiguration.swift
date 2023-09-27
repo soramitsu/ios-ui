@@ -42,10 +42,10 @@ public class SoramitsuLabelConfiguration<Type: UILabel & Atom>: SoramitsuViewCon
 		}
 	}
     
-    public var supportsPaletteMode: Bool = true {
-            didSet {
-                updateAttributedText()
-            }
+    public override var supportsPaletteMode: Bool {
+        didSet {
+            updateAttributedText()
+        }
     }
 
 	// MARK: Other
