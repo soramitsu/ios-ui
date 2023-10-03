@@ -466,6 +466,16 @@
           "value": "$Color.Red.5",
           "type": "color",
           "description": "Secondary emphasis accent on Error"
+        },
+        "Info": {
+          "value": "$Color.Blue.40",
+          "type": "color",
+          "description": "Maximum emphasis accent on info messages"
+        },
+        "InfoContainer": {
+          "value": "$Color.Blue.5",
+          "type": "color",
+          "description": "Secondary emphasis accent on Info"
         }
       },
       "Additional": {
@@ -560,7 +570,7 @@
           "description": "High emphasis text and icons on Inverted Surface"
         },
         "Outline": {
-          "value": "$Color.Brown.5",
+          "value": "$Color.Grey.60",
           "type": "color",
           "description": "Control elements outline, dividers."
         }
@@ -595,6 +605,14 @@
           "value": "$Color.Red.5",
           "type": "color",
           "description": "Secondary emphasis accent on Error"
+        },
+        "Info": {
+          "value": "$Color.Blue.40",
+          "type": "color"
+        },
+        "InfoContainer": {
+          "value": "$Color.Blue.5",
+          "type": "color"
         }
       },
       "Additional": {
@@ -951,7 +969,7 @@
             "fontWeight": "$Font.FontWeight.One",
             "lineHeight": "16",
             "fontSize": "16",
-            "textCase": "uppercase",
+            "textCase": "",
             "letterSpacing": "0%",
             "textDecoration": "none",
             "paragraphSpacing": "0"
