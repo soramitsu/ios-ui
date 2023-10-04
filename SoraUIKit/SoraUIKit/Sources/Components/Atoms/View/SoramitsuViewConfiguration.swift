@@ -4,14 +4,14 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
     
     public var backgroundColor: SoramitsuColor = .custom(uiColor: .clear) {
         didSet {
-            let color = style.palette.color(backgroundColor)
+            let color = supportedPalette.color(backgroundColor)
             owner?.backgroundColor = color
         }
     }
     
     public var tintColor: SoramitsuColor = .accentPrimary {
         didSet {
-            owner?.tintColor = style.palette.color(tintColor)
+            owner?.tintColor = supportedPalette.color(tintColor)
         }
     }
     
@@ -41,7 +41,7 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
                 owner?.layer.borderColor = nil
                 return
             }
-            owner?.layer.borderColor = style.palette.color(color).cgColor
+            owner?.layer.borderColor = supportedPalette.color(color).cgColor
         }
     }
     
@@ -74,12 +74,13 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
     public var shadow: Shadow = .none {
         didSet {
             guard let owner = owner else { return }
-            let shadowData = style.shady.shadow(shadow)
+            let shade = SoramitsuUI.shared.theme == .light ? shadow : .none
+            let shadowData = style.shady.shadow(shade)
             owner.layer.shadowColor = shadowData.color
             owner.layer.shadowOffset = shadowData.offset
             owner.layer.shadowRadius = shadowData.radius
             owner.layer.shadowOpacity = shadowData.opacity
-            clipsToBounds = shadow == .none
+            clipsToBounds = shade == .none
         }
     }
     
@@ -101,9 +102,18 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
         }
     }
     
-    public var supportsPaletteMode: Bool = true
+    public var supportsPaletteMode: Bool = true {
+        didSet {
+            supportedPalette = supportsPaletteMode ? style.palette : LightPalette()
+            retrigger(self, \.backgroundColor)
+            retrigger(self, \.tintColor)
+            retrigger(self, \.borderColor)
+        }
+    }
     
     private(set) lazy var overlay = SoramitsuOverlayDecorator(style: style)
+    
+    private lazy var supportedPalette: Palette = style.palette
     
     private lazy var blurDecorator = SoramitsuBlurDecorator()
     
@@ -142,10 +152,11 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
     public override func styleDidChange(options: UpdateOptions) {
         super.styleDidChange(options: options)
         
-        if options.contains(.palette) && supportsPaletteMode {
+        if options.contains(.palette) {
             retrigger(self, \.backgroundColor)
             retrigger(self, \.tintColor)
             retrigger(self, \.borderColor)
+            retrigger(self, \.shadow)
         }
     }
     
