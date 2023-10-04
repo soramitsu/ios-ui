@@ -118,7 +118,7 @@ public final class SoramitsuButton: UIControl, Molecule {
             sora.shadow = .default
         }
 
-        let palette = sora.style.palette
+        let palette = sora.supportsPaletteMode ? sora.style.palette : LightPalette()
 
         let borderColor = palette.color((isEnabled ? type.tintColor : type.disabledBorderColor) ?? .fgPrimary).cgColor
         layer.borderColor = borderColor
