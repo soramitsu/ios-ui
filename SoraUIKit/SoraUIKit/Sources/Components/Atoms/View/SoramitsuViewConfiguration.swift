@@ -4,6 +4,7 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
     
     public var backgroundColor: SoramitsuColor = .custom(uiColor: .clear) {
         didSet {
+            let supportedPalette = supportsPaletteMode ? style.palette : LightPalette()
             let color = supportedPalette.color(backgroundColor)
             owner?.backgroundColor = color
         }
@@ -11,6 +12,7 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
     
     public var tintColor: SoramitsuColor = .accentPrimary {
         didSet {
+            let supportedPalette = supportsPaletteMode ? style.palette : LightPalette()
             owner?.tintColor = supportedPalette.color(tintColor)
         }
     }
@@ -41,6 +43,7 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
                 owner?.layer.borderColor = nil
                 return
             }
+            let supportedPalette = supportsPaletteMode ? style.palette : LightPalette()
             owner?.layer.borderColor = supportedPalette.color(color).cgColor
         }
     }
@@ -104,7 +107,6 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
     
     public var supportsPaletteMode: Bool = true {
         didSet {
-            supportedPalette = supportsPaletteMode ? style.palette : LightPalette()
             retrigger(self, \.backgroundColor)
             retrigger(self, \.tintColor)
             retrigger(self, \.borderColor)
@@ -112,8 +114,6 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
     }
     
     private(set) lazy var overlay = SoramitsuOverlayDecorator(style: style)
-    
-    private lazy var supportedPalette: Palette = style.palette
     
     private lazy var blurDecorator = SoramitsuBlurDecorator()
     
