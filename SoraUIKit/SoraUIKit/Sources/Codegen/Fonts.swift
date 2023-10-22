@@ -1,57 +1,50 @@
 import Foundation
 
 // #codegen
+enum FontWeight: String, CaseIterable {
+	case zero = "Regular"
+	case one = "Bold"
+}
+
 enum FontFamily: String, CaseIterable {
 	case text = "Inter"
 	case headline = "Sora"
 }
 
-enum FontWeight: String, CaseIterable {
-	case one = "Bold"
-	case zero = "Regular"
-}
-
 public enum FontType {
-	public static let headline1: FontData = FontData(fontFamily: .headline,
+	public static let displayM: FontData = FontData(fontFamily: .headline,
 												fontSize: 24,
 												fontWeight: .one,
 												letterSpacing: 0.0,
 												lineHeight: 32,
 												paragraphSpacing: 0)
 
-	public static let headline4: FontData = FontData(fontFamily: .headline,
-												fontSize: 13,
-												fontWeight: .zero,
-												letterSpacing: 0.0,
-												lineHeight: 16,
-												paragraphSpacing: 0)
-
-	public static let headline2: FontData = FontData(fontFamily: .headline,
+	public static let displayS: FontData = FontData(fontFamily: .headline,
 												fontSize: 18,
 												fontWeight: .one,
 												letterSpacing: 0.0,
 												lineHeight: 24,
 												paragraphSpacing: 0)
 
-	public static let headline3: FontData = FontData(fontFamily: .headline,
-												fontSize: 15,
+	public static let displayL: FontData = FontData(fontFamily: .headline,
+												fontSize: 34,
 												fontWeight: .one,
 												letterSpacing: 0.0,
-												lineHeight: 24,
+												lineHeight: 40,
 												paragraphSpacing: 0)
 
-	public static let buttonM: FontData = FontData(fontFamily: .headline,
+	public static let textBoldM: FontData = FontData(fontFamily: .text,
 												fontSize: 16,
 												fontWeight: .one,
 												letterSpacing: 0.0,
 												lineHeight: 16,
 												paragraphSpacing: 0)
 
-	public static let textXS: FontData = FontData(fontFamily: .text,
-												fontSize: 12,
-												fontWeight: .zero,
+	public static let textBoldS: FontData = FontData(fontFamily: .text,
+												fontSize: 14,
+												fontWeight: .one,
 												letterSpacing: 0.0,
-												lineHeight: 12,
+												lineHeight: 16,
 												paragraphSpacing: 0)
 
 	public static let textBoldL: FontData = FontData(fontFamily: .text,
@@ -68,18 +61,11 @@ public enum FontType {
 												lineHeight: 12,
 												paragraphSpacing: 0)
 
-	public static let textBoldM: FontData = FontData(fontFamily: .text,
-												fontSize: 16,
-												fontWeight: .one,
+	public static let textXS: FontData = FontData(fontFamily: .text,
+												fontSize: 12,
+												fontWeight: .zero,
 												letterSpacing: 0.0,
-												lineHeight: 16,
-												paragraphSpacing: 0)
-
-	public static let textBoldS: FontData = FontData(fontFamily: .text,
-												fontSize: 14,
-												fontWeight: .one,
-												letterSpacing: 0.0,
-												lineHeight: 16,
+												lineHeight: 12,
 												paragraphSpacing: 0)
 
 	public static let textS: FontData = FontData(fontFamily: .text,
@@ -103,18 +89,46 @@ public enum FontType {
 												lineHeight: 20,
 												paragraphSpacing: 0)
 
-	public static let paragraphL: FontData = FontData(fontFamily: .text,
-												fontSize: 18,
-												fontWeight: .zero,
+	public static let headline1: FontData = FontData(fontFamily: .headline,
+												fontSize: 24,
+												fontWeight: .one,
 												letterSpacing: 0.0,
-												lineHeight: 28,
+												lineHeight: 32,
 												paragraphSpacing: 0)
 
-	public static let paragraphBoldL: FontData = FontData(fontFamily: .text,
+	public static let headline4: FontData = FontData(fontFamily: .headline,
+												fontSize: 13,
+												fontWeight: .zero,
+												letterSpacing: 0.0,
+												lineHeight: 16,
+												paragraphSpacing: 0)
+
+	public static let headline3: FontData = FontData(fontFamily: .headline,
+												fontSize: 15,
+												fontWeight: .one,
+												letterSpacing: 0.0,
+												lineHeight: 24,
+												paragraphSpacing: 0)
+
+	public static let headline2: FontData = FontData(fontFamily: .headline,
 												fontSize: 18,
 												fontWeight: .one,
 												letterSpacing: 0.0,
-												lineHeight: 28,
+												lineHeight: 24,
+												paragraphSpacing: 0)
+
+	public static let buttonM: FontData = FontData(fontFamily: .headline,
+												fontSize: 16,
+												fontWeight: .one,
+												letterSpacing: 0.0,
+												lineHeight: 16,
+												paragraphSpacing: 0)
+
+	public static let paragraphXS: FontData = FontData(fontFamily: .text,
+												fontSize: 12,
+												fontWeight: .zero,
+												letterSpacing: 0.0,
+												lineHeight: 16,
 												paragraphSpacing: 0)
 
 	public static let paragraphBoldXS: FontData = FontData(fontFamily: .text,
@@ -138,11 +152,11 @@ public enum FontType {
 												lineHeight: 20,
 												paragraphSpacing: 0)
 
-	public static let paragraphM: FontData = FontData(fontFamily: .text,
-												fontSize: 16,
-												fontWeight: .zero,
+	public static let paragraphBoldL: FontData = FontData(fontFamily: .text,
+												fontSize: 18,
+												fontWeight: .one,
 												letterSpacing: 0.0,
-												lineHeight: 24,
+												lineHeight: 28,
 												paragraphSpacing: 0)
 
 	public static let paragraphS: FontData = FontData(fontFamily: .text,
@@ -152,31 +166,17 @@ public enum FontType {
 												lineHeight: 20,
 												paragraphSpacing: 0)
 
-	public static let paragraphXS: FontData = FontData(fontFamily: .text,
-												fontSize: 12,
+	public static let paragraphL: FontData = FontData(fontFamily: .text,
+												fontSize: 18,
 												fontWeight: .zero,
 												letterSpacing: 0.0,
-												lineHeight: 16,
+												lineHeight: 28,
 												paragraphSpacing: 0)
 
-	public static let displayS: FontData = FontData(fontFamily: .headline,
-												fontSize: 18,
-												fontWeight: .one,
+	public static let paragraphM: FontData = FontData(fontFamily: .text,
+												fontSize: 16,
+												fontWeight: .zero,
 												letterSpacing: 0.0,
 												lineHeight: 24,
-												paragraphSpacing: 0)
-
-	public static let displayL: FontData = FontData(fontFamily: .headline,
-												fontSize: 34,
-												fontWeight: .one,
-												letterSpacing: 0.0,
-												lineHeight: 40,
-												paragraphSpacing: 0)
-
-	public static let displayM: FontData = FontData(fontFamily: .headline,
-												fontSize: 24,
-												fontWeight: .one,
-												letterSpacing: 0.0,
-												lineHeight: 32,
 												paragraphSpacing: 0)
 }
