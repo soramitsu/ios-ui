@@ -5,29 +5,29 @@ public enum SoramitsuColor {
 
 	case custom(uiColor: UIColor)
 
-	case fgPrimary
-	case statusInfo
-	case statusSuccessContainer
-	case fgTertiary
-	case fgSecondary
-	case statusErrorContainer
-	case bgPage
-	case accentSecondary
-	case accentPrimaryContainer
+	case additionalPolkaswapContainer
+	case accentSecondaryContainer
+	case fgOutline
 	case statusInfoContainer
 	case accentPrimary
-	case fgInverted
-	case bgSurfaceInverted
-	case bgSurfaceVariant
-	case accentTertiaryContainer
-	case bgSurface
-	case statusWarningContainer
-	case statusSuccess
-	case statusError
-	case additionalPolkaswapContainer
-	case accentTertiary
-	case fgOutline
-	case additionalPolkaswap
+	case statusErrorContainer
 	case statusWarning
-	case accentSecondaryContainer
+	case bgSurface
+	case statusSuccess
+	case accentPrimaryContainer
+	case fgTertiary
+	case accentTertiaryContainer
+	case statusError
+	case fgSecondary
+	case bgPage
+	case bgSurfaceVariant
+	case additionalPolkaswap
+	case bgSurfaceInverted
+	case statusWarningContainer
+	case accentTertiary
+	case statusInfo
+	case accentSecondary
+	case fgPrimary
+	case statusSuccessContainer
+	case fgInverted
 }

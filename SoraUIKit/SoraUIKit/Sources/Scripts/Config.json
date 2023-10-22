@@ -350,6 +350,92 @@
           "value": "#3B0219",
           "type": "color"
         }
+      },
+      "DarkTheme": {
+        "1": {
+          "value": "#F754A3",
+          "type": "color"
+        },
+        "2": {
+          "value": "#FFE8EB",
+          "type": "color"
+        },
+        "3": {
+          "value": "#FCFCFC",
+          "type": "color"
+        },
+        "4": {
+          "value": "#313131",
+          "type": "color"
+        },
+        "5": {
+          "value": "#9B6FA5",
+          "type": "color"
+        },
+        "6": {
+          "value": "#313131",
+          "type": "color"
+        },
+        "7": {
+          "value": "#45245F",
+          "type": "color"
+        },
+        "8": {
+          "value": "#592D71",
+          "type": "color"
+        },
+        "9": {
+          "value": "#492067",
+          "type": "color"
+        },
+        "10": {
+          "value": "#FCFCFC",
+          "type": "color"
+        },
+        "11": {
+          "value": "#FCFCFC",
+          "type": "color"
+        },
+        "12": {
+          "value": "#C29AB7",
+          "type": "color"
+        },
+        "13": {
+          "value": "#9B6FA5",
+          "type": "color"
+        },
+        "14": {
+          "value": "#45245F",
+          "type": "color"
+        },
+        "15": {
+          "value": "#744594",
+          "type": "color"
+        },
+        "16": {
+          "value": "#44E5B2",
+          "type": "color"
+        },
+        "17": {
+          "value": "#D3F6EC",
+          "type": "color"
+        },
+        "18": {
+          "value": "#FF9900",
+          "type": "color"
+        },
+        "19": {
+          "value": "#FFF1D2",
+          "type": "color"
+        },
+        "20": {
+          "value": "#F24197",
+          "type": "color"
+        },
+        "21": {
+          "value": "#FFE8EB",
+          "type": "color"
+        }
       }
     }
   },
@@ -496,113 +582,113 @@
     "Color": {
       "Accent": {
         "Primary": {
-          "value": "$Color.Red.40",
+          "value": "$Color.DarkTheme.1",
           "type": "color",
           "description": "Primary accent maximum emphasis"
         },
         "PrimaryContainer": {
-          "value": "$Color.Red.5",
+          "value": "$Color.DarkTheme.2",
           "type": "color",
           "description": "Primary accent lower emphasis"
         },
         "Secondary": {
-          "value": "$Color.Grey.5",
+          "value": "$Color.DarkTheme.3",
           "type": "color",
           "description": "Secondary accent maximum emphasis"
         },
         "SecondaryContainer": {
-          "value": "$Color.Grey.70",
+          "value": "$Color.DarkTheme.4",
           "type": "color",
           "description": "Secondary accent lower emphasis"
         },
         "Tertiary": {
-          "value": "$Color.Grey.50",
+          "value": "$Color.DarkTheme.5",
           "type": "color",
           "description": "Tetriary accent maximum emphasis"
         },
         "TertiaryContainer": {
-          "value": "$Color.Grey.70",
+          "value": "$Color.DarkTheme.6",
           "type": "color",
           "description": "Tetriary accent lower emphasis"
         }
       },
       "Bg": {
         "Page": {
-          "value": "$Color.Grey.90",
+          "value": "$Color.DarkTheme.7",
           "type": "color",
           "description": "Page background"
         },
         "Surface": {
-          "value": "$Color.Grey.80",
+          "value": "$Color.DarkTheme.8",
           "type": "color",
           "description": "Differentiation against BG Primary. Example: Content blocks or card’s color."
         },
         "SurfaceVariant": {
-          "value": "$Color.Grey.70",
+          "value": "$Color.DarkTheme.9",
           "type": "color",
           "description": "Differentiation against Surface and Background. Example: Controls, input fields."
         },
         "SurfaceInverted": {
-          "value": "$Color.Grey.5",
+          "value": "$Color.DarkTheme.10",
           "type": "color",
           "description": "Inverted surface"
         }
       },
       "Fg": {
         "Primary": {
-          "value": "$Color.Grey.5",
+          "value": "$Color.DarkTheme.11",
           "type": "color",
           "description": "High emphasis text and icons on Backgrounds"
         },
         "Secondary": {
-          "value": "$Color.Grey.50",
+          "value": "$Color.DarkTheme.12",
           "type": "color",
           "description": "Lower emphasis text and icons on Backgrounds"
         },
         "Tertiary": {
-          "value": "$Color.Brown.30",
+          "value": "$Color.DarkTheme.13",
           "type": "color",
           "description": "Lowest emphasis text and icons on Backgrounds"
         },
         "Inverted": {
-          "value": "$Color.Grey.90",
+          "value": "$Color.DarkTheme.14",
           "type": "color",
           "description": "High emphasis text and icons on Inverted Surface"
         },
         "Outline": {
-          "value": "$Color.Grey.60",
+          "value": "$Color.DarkTheme.15",
           "type": "color",
           "description": "Control elements outline, dividers."
         }
       },
       "Status": {
         "Success": {
-          "value": "$Color.Green.40",
+          "value": "$Color.DarkTheme.16",
           "type": "color",
           "description": "Maximum emphasis accent on success messages"
         },
         "SuccessContainer": {
-          "value": "$Color.Green.5",
+          "value": "$Color.DarkTheme.17",
           "type": "color",
           "description": "Secondary emphasis accent on success"
         },
         "Warning": {
-          "value": "$Color.Yellow.30",
+          "value": "$Color.DarkTheme.18",
           "type": "color",
           "description": "Maximum emphasis accent on warnings"
         },
         "WarningContainer": {
-          "value": "$Color.Yellow.5",
+          "value": "$Color.DarkTheme.19",
           "type": "color",
           "description": "Secondary emphasis accent on Warning"
         },
         "Error": {
-          "value": "$Color.Red.40",
+          "value": "$Color.DarkTheme.20",
           "type": "color",
           "description": "Maximum emphasis accent on errors messages"
         },
         "ErrorContainer": {
-          "value": "$Color.Red.5",
+          "value": "$Color.DarkTheme.21",
           "type": "color",
           "description": "Secondary emphasis accent on Error"
         },
