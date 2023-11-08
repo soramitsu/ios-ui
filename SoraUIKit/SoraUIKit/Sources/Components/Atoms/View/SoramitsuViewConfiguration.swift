@@ -77,13 +77,12 @@ public class SoramitsuViewConfiguration<Type: Element & UIView>: SoramitsuConfig
     public var shadow: Shadow = .none {
         didSet {
             guard let owner = owner else { return }
-            let shade = SoramitsuUI.shared.theme == .light ? shadow : .none
-            let shadowData = style.shady.shadow(shade)
+            let shadowData = style.shady.shadow(shadow)
             owner.layer.shadowColor = shadowData.color
             owner.layer.shadowOffset = shadowData.offset
             owner.layer.shadowRadius = shadowData.radius
             owner.layer.shadowOpacity = shadowData.opacity
-            clipsToBounds = shade == .none
+            clipsToBounds = shadow == .none
         }
     }
     
