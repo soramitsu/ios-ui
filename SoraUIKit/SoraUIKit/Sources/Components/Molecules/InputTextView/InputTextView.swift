@@ -94,6 +94,7 @@ extension InputTextView: UITextViewDelegate {
     }
     
     public func textViewDidChange(_ textView: UITextView) {
+        self.textView.sora.text = textView.text
         delegate?.textViewDidChange(textView)
         let fixedWidth = textView.frame.size.width
         let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))

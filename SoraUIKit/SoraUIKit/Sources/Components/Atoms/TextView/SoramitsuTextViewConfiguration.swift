@@ -90,7 +90,8 @@ public final class SoramitsuTextViewConfiguration<Type: SoramitsuTextView>: Sora
 
 	override func configureOwner() {
 		super.configureOwner()
-		updateAttributedText()
+        retrigger(self, \.text)
+        retrigger(self, \.attributedText)
 		retrigger(self, \.textInsets)
 		retrigger(self, \.isEditable)
 		retrigger(self, \.isSelectable)
@@ -99,6 +100,7 @@ public final class SoramitsuTextViewConfiguration<Type: SoramitsuTextView>: Sora
 		retrigger(self, \.isScrollEnabled)
 
 		updateKeyboardAppearence()
+        updateAttributedText()
 	}
 
 	private func updateAttributedText() {
