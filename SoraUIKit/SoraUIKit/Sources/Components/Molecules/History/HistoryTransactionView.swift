@@ -108,12 +108,6 @@ public final class HistoryTransactionView: UIControl, Molecule {
         view.widthAnchor.constraint(equalToConstant: 16).isActive = true
         return view
     }()
-    
-    public let amountView: SoramitsuView = {
-        let view = SoramitsuView()
-        view.sora.backgroundColor = .custom(uiColor: .clear)
-        return view
-    }()
 
     public let fiatLabel: SoramitsuLabel = {
         let label = SoramitsuLabel()
@@ -143,8 +137,7 @@ private extension HistoryTransactionView {
         isUserInteractionEnabled = false
         translatesAutoresizingMaskIntoConstraints = false
 
-        amountStackView.addArrangedSubviews(amountView)
-        amountView.addSubviews([amountUpLabel, statusImageView])
+        amountStackView.addArrangedSubviews([amountUpLabel, statusImageView])
         addSubviews(currenciesView, titleLabel, subtitleLabel, amountStackView)
         
         transactionTypeView.addSubview(transactionTypeImageView)
@@ -188,10 +181,6 @@ private extension HistoryTransactionView {
             amountStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             amountStackView.topAnchor.constraint(equalTo: titleLabel.topAnchor),
             amountStackView.bottomAnchor.constraint(equalTo: subtitleLabel.topAnchor),
-            
-            statusImageView.trailingAnchor.constraint(equalTo: amountView.trailingAnchor),
-            
-            amountUpLabel.trailingAnchor.constraint(equalTo: statusImageView.leadingAnchor, constant: -4),
         ])
     }
     
