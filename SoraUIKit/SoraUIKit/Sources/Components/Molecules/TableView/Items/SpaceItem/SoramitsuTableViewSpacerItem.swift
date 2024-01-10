@@ -4,7 +4,7 @@ public final class SoramitsuTableViewSpacerItem: NSObject {
 
 	private let space: CGFloat
 
-	public var color: SoramitsuColor
+	public var backgroundColor: SoramitsuColor
     
     public var radius: Radius
     
@@ -15,9 +15,9 @@ public final class SoramitsuTableViewSpacerItem: NSObject {
                 radius: Radius = .zero,
                 mask: CornerMask = .all) {
 		self.space = space
-        self.color = color
         self.radius = radius
         self.mask = mask
+        backgroundColor = color
 	}
 
 }
