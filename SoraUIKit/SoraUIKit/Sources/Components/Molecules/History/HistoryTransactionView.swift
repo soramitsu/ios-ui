@@ -21,15 +21,15 @@ public final class HistoryTransactionView: UIControl, Molecule {
         return view
     }()
 
-    public let firstCurrencyImageView: UIImageView = {
-        let view = UIImageView()
+    public let firstCurrencyImageView: SoramitsuImageView = {
+        let view = SoramitsuImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.widthAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         return view
     }()
 
-    public let secondCurrencyImageView: UIImageView = {
-        let view = UIImageView()
+    public let secondCurrencyImageView: SoramitsuImageView = {
+        let view = SoramitsuImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 28).isActive = true
         view.widthAnchor.constraint(equalToConstant: 28).isActive = true
@@ -37,8 +37,8 @@ public final class HistoryTransactionView: UIControl, Molecule {
         return view
     }()
     
-    public let oneCurrencyImageView: UIImageView = {
-        let view = UIImageView()
+    public let oneCurrencyImageView: SoramitsuImageView = {
+        let view = SoramitsuImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 32).isActive = true
         view.widthAnchor.constraint(equalToConstant: 32).isActive = true
