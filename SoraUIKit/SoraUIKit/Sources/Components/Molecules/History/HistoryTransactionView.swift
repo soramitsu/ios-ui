@@ -23,6 +23,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
 
     public let firstCurrencyImageView: SoramitsuImageView = {
         let view = SoramitsuImageView()
+        view.sora.loadingPlaceholder.type = .shimmer
         view.translatesAutoresizingMaskIntoConstraints = false
         view.widthAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         return view
@@ -30,6 +31,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
 
     public let secondCurrencyImageView: SoramitsuImageView = {
         let view = SoramitsuImageView()
+        view.sora.loadingPlaceholder.type = .shimmer
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 28).isActive = true
         view.widthAnchor.constraint(equalToConstant: 28).isActive = true
@@ -39,6 +41,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
     
     public let oneCurrencyImageView: SoramitsuImageView = {
         let view = SoramitsuImageView()
+        view.sora.loadingPlaceholder.type = .shimmer
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 32).isActive = true
         view.widthAnchor.constraint(equalToConstant: 32).isActive = true
@@ -62,6 +65,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         view.sora.backgroundColor = .bgSurface
         view.sora.shadow = .small
         view.sora.tintColor = .fgSecondary
+        view.sora.loadingPlaceholder.type = .shimmer
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 12).isActive = true
         view.widthAnchor.constraint(equalToConstant: 12).isActive = true
@@ -72,6 +76,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textM
         label.sora.textColor = .fgPrimary
+        label.sora.loadingPlaceholder.type = .shimmer
         label.setContentHuggingPriority(.required, for: .vertical)
         return label
     }()
@@ -80,6 +85,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         let label = SoramitsuLabel()
         label.sora.font = FontType.textBoldXS
         label.sora.textColor = .fgSecondary
+        label.sora.loadingPlaceholder.type = .shimmer
         return label
     }()
     
@@ -96,6 +102,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         label.sora.font = FontType.textM
         label.sora.textColor = .fgPrimary
         label.sora.alignment = .right
+        label.sora.loadingPlaceholder.type = .shimmer
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
         return label
     }()
@@ -103,6 +110,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
     public let statusImageView: SoramitsuImageView = {
         let view = SoramitsuImageView()
         view.sora.isHidden = true
+        view.sora.loadingPlaceholder.type = .shimmer
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 16).isActive = true
         view.widthAnchor.constraint(equalToConstant: 16).isActive = true
@@ -114,6 +122,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         label.sora.font = FontType.textBoldXS
         label.sora.textColor = .fgSecondary
         label.sora.alignment = .right
+        label.sora.loadingPlaceholder.type = .shimmer
         return label
     }()
 
