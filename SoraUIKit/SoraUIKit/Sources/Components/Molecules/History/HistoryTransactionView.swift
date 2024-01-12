@@ -24,6 +24,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
     public let firstCurrencyImageView: SoramitsuImageView = {
         let view = SoramitsuImageView()
         view.sora.loadingPlaceholder.type = .shimmer
+        view.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         view.translatesAutoresizingMaskIntoConstraints = false
         view.widthAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         return view
@@ -32,6 +33,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
     public let secondCurrencyImageView: SoramitsuImageView = {
         let view = SoramitsuImageView()
         view.sora.loadingPlaceholder.type = .shimmer
+        view.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 28).isActive = true
         view.widthAnchor.constraint(equalToConstant: 28).isActive = true
@@ -42,6 +44,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
     public let oneCurrencyImageView: SoramitsuImageView = {
         let view = SoramitsuImageView()
         view.sora.loadingPlaceholder.type = .shimmer
+        view.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 32).isActive = true
         view.widthAnchor.constraint(equalToConstant: 32).isActive = true
@@ -66,6 +69,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         view.sora.shadow = .small
         view.sora.tintColor = .fgSecondary
         view.sora.loadingPlaceholder.type = .shimmer
+        view.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 12).isActive = true
         view.widthAnchor.constraint(equalToConstant: 12).isActive = true
@@ -77,6 +81,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         label.sora.font = FontType.textM
         label.sora.textColor = .fgPrimary
         label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         label.setContentHuggingPriority(.required, for: .vertical)
         return label
     }()
@@ -86,6 +91,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         label.sora.font = FontType.textBoldXS
         label.sora.textColor = .fgSecondary
         label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         return label
     }()
     
@@ -103,6 +109,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         label.sora.textColor = .fgPrimary
         label.sora.alignment = .right
         label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
         return label
     }()
@@ -111,6 +118,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         let view = SoramitsuImageView()
         view.sora.isHidden = true
         view.sora.loadingPlaceholder.type = .shimmer
+        view.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 16).isActive = true
         view.widthAnchor.constraint(equalToConstant: 16).isActive = true
@@ -123,6 +131,7 @@ public final class HistoryTransactionView: UIControl, Molecule {
         label.sora.textColor = .fgSecondary
         label.sora.alignment = .right
         label.sora.loadingPlaceholder.type = .shimmer
+        label.sora.loadingPlaceholder.shimmerview.sora.cornerRadius = .circle
         return label
     }()
 
