@@ -51,10 +51,7 @@ public final class InputAssetField: UIControl, Molecule {
         textField.sora.textColor = .fgPrimary
         textField.sora.font = FontType.displayS
         textField.textAlignment = .right
-        
-        textField.sora.addHandler(for: .editingChanged) {
-            self.sora.text = textField.text
-        }
+
         textField.sora.addHandler(for: .editingDidBegin) { [weak self] in
             self?.sora.state = .focused
         }
