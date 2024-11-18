@@ -6,7 +6,7 @@ target 'Sample' do
   use_frameworks!
 
   # Pods for Sample
-  pod 'SoraUIKit', :path => '../SoraUIKit'
+  pod 'SoraUIKit', :path => '../'
 
   target 'SampleTests' do
     inherit! :search_paths

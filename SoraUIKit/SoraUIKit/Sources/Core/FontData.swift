@@ -20,7 +20,7 @@ public struct FontData {
     let paragraphSpacing: CGFloat
 
     public var font: UIFont {
-        return UIFont(name: "\(fontFamily)-\(fontWeight)", size: fontSize) ?? .systemFont(ofSize: fontSize, weight: fontWeight.uiKitWeight)
+        return UIFont(name: "\(fontFamily.systemName)-\(fontWeight.rawValue)", size: fontSize) ?? .systemFont(ofSize: fontSize, weight: fontWeight.uiKitWeight)
     }
 
     var paragraph: NSMutableParagraphStyle {
@@ -57,6 +57,11 @@ public struct FontData {
 @objc
 public final class TypographyConstants: NSObject {
     @objc public class func registerFonts(from bundle: Bundle) {
+        guard
+            let bundleUrl = bundle.url(forResource: "SoraUIKit", withExtension: "bundle"),
+            let podBundle = Bundle(url: bundleUrl) else {
+            return
+        }
         let fontFamilies = FontFamily.allCases.map { $0.rawValue }
         let fontWeights = FontWeight.allCases.map { $0.rawValue }
 
@@ -68,8 +73,7 @@ public final class TypographyConstants: NSObject {
         }
 
         for fontName in fonts {
-            if let url = bundle.url(forResource: fontName,
-                                     withExtension: "otf"),
+            if let url = podBundle.url(forResource: fontName, withExtension: "otf"),
                 let data = try? Data(contentsOf: url),
                 let provider = CGDataProvider(data: data as CFData),
                 let font = CGFont(provider) {

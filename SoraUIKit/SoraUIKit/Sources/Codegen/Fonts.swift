@@ -9,6 +9,13 @@ enum FontWeight: String, CaseIterable {
 enum FontFamily: String, CaseIterable {
 	case text = "Inter"
 	case headline = "Sora"
+    
+    var systemName: String {
+        switch self {
+        case .text: return "Inter"
+        case .headline: return "sora-rc004-0417"
+        }
+    }
 }
 
 public enum FontType {
