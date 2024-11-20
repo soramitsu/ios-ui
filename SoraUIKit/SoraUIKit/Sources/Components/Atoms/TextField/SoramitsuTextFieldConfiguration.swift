@@ -107,7 +107,7 @@ public class SoramitsuTextFieldConfiguration<Type: SoramitsuTextField>: Soramits
     private func updateKeyboardAppearence() {
 		switch SoramitsuUI.shared.theme {
 		case .light: owner?.keyboardAppearance = .light
-		case .dark: owner?.keyboardAppearance = .dark
+        case .dark, .fearless: owner?.keyboardAppearance = .dark
 		}
 	}
 }

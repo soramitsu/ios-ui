@@ -1,18 +1,20 @@
 public enum SoramitsuThemeType: Int {
 	case light
 	case dark
+    case fearless
 
     public var palette: Palette {
 		switch self {
 		case .light: return LightPalette()
-		case .dark: return DarkPalette()
+        case .dark: return DarkPalette()
+        case .fearless: return FearlessPalette()
 		}
 	}
 
 	var statusBar: StatusBarStyleValues {
 		switch self {
 		case .light: return LightStatusBarStyle()
-		case .dark: return DarkStatusBarStyle()
+        case .dark, .fearless: return DarkStatusBarStyle()
 		}
 	}
 }

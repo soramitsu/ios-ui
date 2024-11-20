@@ -20,7 +20,7 @@ final class ThemeManager {
 			switch mode {
 			case .system:
 				storage.theme = nil
-			case let .manual(theme):
+            case let .manual(theme):
 				storage.theme = theme
 			}
 			updateTheme()

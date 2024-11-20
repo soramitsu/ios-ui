@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3604E3D72CEE47190061D830 /* FearlessPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604E3D62CEE47190061D830 /* FearlessPalette.swift */; };
 		362C698529DED613003A82B4 /* SoraUIKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 362C698429DED613003A82B4 /* SoraUIKit.docc */; };
 		362C698B29DED613003A82B4 /* SoraUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362C698029DED613003A82B4 /* SoraUIKit.framework */; };
 		362C699029DED613003A82B4 /* SoraUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C698F29DED613003A82B4 /* SoraUIKitTests.swift */; };
@@ -170,6 +171,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3604E3D62CEE47190061D830 /* FearlessPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FearlessPalette.swift; sourceTree = "<group>"; };
 		362C698029DED613003A82B4 /* SoraUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SoraUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		362C698329DED613003A82B4 /* SoraUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoraUIKit.h; sourceTree = "<group>"; };
 		362C698429DED613003A82B4 /* SoraUIKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SoraUIKit.docc; sourceTree = "<group>"; };
@@ -461,6 +463,7 @@
 				362C69BA29DED652003A82B4 /* Colors.swift */,
 				362C69BB29DED652003A82B4 /* LightPalette.swift */,
 				362C69BC29DED652003A82B4 /* CornerRadius.swift */,
+				3604E3D62CEE47190061D830 /* FearlessPalette.swift */,
 			);
 			path = Codegen;
 			sourceTree = "<group>";
@@ -1254,6 +1257,7 @@
 				362C6A7529DED652003A82B4 /* Math.swift in Sources */,
 				362C6AA029DED652003A82B4 /* InputAssetFieldConfiguration.swift in Sources */,
 				362C6ACC29DED652003A82B4 /* SoramitsuLoadingPlaceholderDecorator.swift in Sources */,
+				3604E3D72CEE47190061D830 /* FearlessPalette.swift in Sources */,
 				362C6A9629DED652003A82B4 /* SoramitsuPlainTableViewDescriptor.swift in Sources */,
 				362C6ADF29DED652003A82B4 /* NSObject+SoramitsuColorable.swift in Sources */,
 				362C6AEB29DED653003A82B4 /* Organism.swift in Sources */,

@@ -132,7 +132,7 @@ public final class SoramitsuTextViewConfiguration<Type: SoramitsuTextView>: Sora
 	private func updateKeyboardAppearence() {
         switch SoramitsuUI.shared.theme {
 		case .light: owner?.keyboardAppearance = .light
-		case .dark: owner?.keyboardAppearance = .dark
+        case .dark, .fearless: owner?.keyboardAppearance = .dark
 		}
 	}
 }
